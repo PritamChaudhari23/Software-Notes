@@ -1,24 +1,5 @@
 BACKEND THINGS:
 
-1. Rate limiting
-2. Load balancing
-3. Caching
-4. API Design
-5. API Gateway
-6. Schema validation
-7. CDN
-8. Microservices
-9. Webhooks
-10. DB and schema design
-11. Sharding
-12. Proxy
-13. Message Queues
-14. Security
-15. Performance
-16. Deployment
-
----
-
 1. Rate limiting : A way to control the number of requests a client (like a user, app or system) can make to a server within a specific period.
 2. Load balancing : A way to distribute incoming requests or traffic across multiple servers to ensure no single server gets overloaded.
 3. Caching : A way to store frequently accesses data temporarily so that it can be retrieved quickly without repeatedly fetching it from original source.
@@ -41,6 +22,7 @@ NODE:
 - Has **Non blocking I/O**: Uses **libuv** library.
 - Has **built in modules** for various functionalities - like file handling, encryption, api request, http etc.
 - **Cross platform, Rich ecosystem, Scalable, real time applications**
+- Modules are written in C++ language
 
 ---
 
