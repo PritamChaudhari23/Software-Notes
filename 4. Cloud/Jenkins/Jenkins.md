@@ -198,31 +198,31 @@ LINKEDIN LEARNING TOPICS:
 
 LEARNING JENKINS:
 
-1]Installation
-2]Jobs
-3]Global tools, parameters, environment variables, jobs schedules, job workspace
-4]View & Folders
+1] Installation
+2] Jobs
+3] Global tools, parameters, environment variables, jobs schedules, job workspace
+4] View & Folders
 
 ---
 
 JENKINS ESSENTIALS:
 
-1]Jenkins and DevOps
-2]Jenkins Pipeline
-3]Integrating jenkins with version control systems
-4]Agents and distributed builds
-5]Artifacts and testing
-6]Securing jenkins
+1] Jenkins and DevOps
+2] Jenkins Pipeline
+3] Integrating jenkins with version control systems
+4] Agents and distributed builds
+5] Artifacts and testing
+6] Securing jenkins
 
 ---
 
 JENKINS ON AWS:
 
-1]Setup Jenkins
-2]Create build environment
-3]Connect Jenkins with webhooks
-4]Deployment to elastic beanstalk
-5]Shutting down AWS resources
+1] Setup Jenkins
+2] Create build environment
+3] Connect Jenkins with webhooks
+4] Deployment to elastic beanstalk
+5] Shutting down AWS resources
 
 ---
 
