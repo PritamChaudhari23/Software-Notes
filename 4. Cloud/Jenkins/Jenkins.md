@@ -152,21 +152,6 @@ Jenkinsfile:
 
 ---
 
-DevOps Lifecycle:
-
-1. Plan
-2. Code
-3. Build
-4. Test
-5. Release
-6. Deploy
-7. Operate
-8. Monitor
-
-1 to 4 => Development, 5 to 8 => Operations
-
----
-
 TERMS:
 
 1. Pipeline: A Jenkins pipeline is a suite of plugins that support implementing and integrating continuous delivery pipelines. Pipelines are defined using a domain-specific language (DSL) called Groovy, which provides powerful features for modeling complex workflows as code.
