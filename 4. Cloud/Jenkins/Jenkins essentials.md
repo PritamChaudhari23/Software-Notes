@@ -20,8 +20,6 @@ Jenkins can be applied in the following steps:
 - Release
 - Deploy
 
-![1742411622109](image/Jenkinsessentials/1742411622109.png)
-
 Jenkins and Continuous Integration
 
 - Continuous integration, often abbreviated as CI, is tied to the build and test phases of the devops lifecycle. The main goal of continuous integration is to find and resolve problems early in the development cycle. These steps also produce an artifact that can be deployed.
@@ -54,3 +52,7 @@ Jenkins and Continuous Delivery
 6] Securing jenkins
 
 ---
+
+- Jfrog
+- Artifact repository
+-
