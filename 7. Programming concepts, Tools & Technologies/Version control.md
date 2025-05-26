@@ -2,7 +2,6 @@ Git:
 
 - It is a distributed version control system which is used to track the changes made in the source code file or revert back to previous versions during the development of any project.
 - GitHub is owned by Microsoft and was created by Linus Torvald.
-
 - Features:
 
 1. Economical - Under GPL (GNU Public Licence)
@@ -36,7 +35,7 @@ Step 2: Commit the changes (to Local Repository)
 Step 3: Push the changes (to Remote/Central Repository)
 
 1. Pull from remote repository
-2. Add a file --> commit (to local repository) --> push to central repository
+2. Add a file -=> commit (to local repository) -=> push to central repository
 
 ---
 
@@ -73,7 +72,7 @@ When new project is started: Create three branches from main
 
 - main/master branch : this is root branch, all the code is deployed on this branch - production environment
 - develop branch - this branch is created from main branch, all the developer's work and feature developments are merged in this branch and tested. Push this branch in main only if everything is working fine.
-- main branch -> develop branch (created from main) - all others branches created from develop and merged in develop and tested.
+- main branch => develop branch (created from main) - all others branches created from develop and merged in develop and tested.
 - Feature/Bug branches created from develop branch and raise MR and merge into develop branch once code reviewed and feature is unit tested.
 - Take latest pull from develop branch before creating it from develop branch. Before pushing the code, also take latest pull from develop branch so my branch is sync with other developers.
 - Don't merge feature or bug branches directly into production, merge them in dev branch only. Merge only dev branch in UAT (after QA signoff) and then UAT branch into Production.
@@ -81,13 +80,13 @@ When new project is started: Create three branches from main
 - .bak file in repository - Used to take backup or copy of a file.
 
 Branch name convention:
-Feature: feature/<feature name OR ticket name>
-Bug: bug/<bug name OR ticket name>
+Feature: feature/`<feature name OR ticket name>`
+Bug: bug/`<bug name OR ticket name>`
 
 Commit message convention:
-Feature: [FEAT <Feature name or Ticet number>]
-Bug: [FIXED <Bug name or ticket name>]
-Paritially completed: [WIP <Feature name OR Ticket name>]
+Feature: [FEAT `<Feature name or Ticet number>`]
+Bug: [FIXED `<Bug name or ticket name>`]
+Paritially completed: [WIP `<Feature name OR Ticket name>`]
 
 Comments:
 Whenever making code changes to the existing snippet write the comment with date, ticket number and name so that others know
@@ -112,7 +111,7 @@ QUESTIONS:
 6. Enable 2FA for my repo?
    ======================================WORK IN PROGRESS====================================================
 
-GitHub commands: (on git bash - go to local repository folder -> R click -> Git Bash here) (Local Repo)
+GitHub commands: (on git bash - go to local repository folder => R click => Git Bash here) (Local Repo)
 
 1. cd : Change to other directory
 2. cd .. : go to previous directory
@@ -120,43 +119,43 @@ GitHub commands: (on git bash - go to local repository folder -> R click -> Git 
 4. ls: display all the files in the current directory
 5. mkdir: make a new directory
 6. clear: clear the console screen
-7. cat <filename> : shows the file content in the bash terminal (shell)
+7. cat `<filename>` : shows the file content in the bash terminal (shell)
 
 ---
 
 1. git init: Create an empty local repo
-2. git remote add origin "<url>" : To link remote repo to local repo
-   url -> clone or download (green button in remote repo) -> copy & paste
+2. git remote add origin "`<url>`" : To link remote repo to local repo
+   url => clone or download (green button in remote repo) => copy & paste
 3. git pull origin master: pulls all the files from the remote repo to local repo
-   OR git pull origin <branchname> : to pull from that branch
+   OR git pull origin `<branchname>` : to pull from that branch
 4. git push origin master: push all the changes from local to remote repo
-   git push origin <branchname> : to push from that branch
-   git push: clone or download -> use SSH generate public SSH key and add that to GitHub account
+   git push origin `<branchname>` : to push from that branch
+   git push: clone or download => use SSH generate public SSH key and add that to GitHub account
 5. git status: to show how many files are added, committed or uncommitted
 6. git log: to show the log of recently commited files.
    OR git log --stat: to show log and well as the files which were pushed or committed
-7. i. git add <filename> : To add only one file
+7. i. git add `<filename>` : To add only one file
    ii. git add -A : To add multiple files to the staging area
-8. i. git commit -m "<commit message>" : To commit a single file.
-   ii. git commit -a -m "<commit message>" : To commit multiple files to local repository
+8. i. git commit -m "`<commit message>`" : To commit a single file.
+   ii. git commit -a -m "`<commit message>`" : To commit multiple files to local repository
 9. ssh -keygen: To generate a ssh key
-   |----> cat <path> (.pub extension)
+   |---=> cat `<path>` (.pub extension)
 10. Key Authentication:
-    i. ssh -T <ssh url>
-    ii. ssh -keygen -t rsa (In central repository: Settings-> SSH and CPG keys -> New SSH Key -> (copy generated SSH key from git bash) -> paste -> add ssh key)
+    i. ssh -T `<ssh url>`
+    ii. ssh -keygen -t rsa (In central repository: Settings=> SSH and CPG keys => New SSH Key => (copy generated SSH key from git bash) => paste => add ssh key)
 11. git branch -m master main: change name of master branch to main
 
 ---
 
 - To create a repository in central repository:
 
-* Start a project -> Repository name & optional description -> public or private??? -> Initialize this repository with a README -> Add .gitignore: NONE, Add a licence: NONE.
-* README -> edit -> you can write a readme description -> Commit changes
+* Start a project => Repository name & optional description => public or private??? => Initialize this repository with a README => Add .gitignore: NONE, Add a licence: NONE.
+* README => edit => you can write a readme description => Commit changes
 
 ---
 
 \*To revert the changes made in a file:
-git log -> copy commit hash (first 8 HEX digits) of the file you want to revert -> git checkout <8 digit HEX> <filename>
+git log => copy commit hash (first 8 HEX digits) of the file you want to revert => git checkout <8 digit HEX> `<filename>`
 
 ---
 
@@ -179,9 +178,9 @@ New commands:
 
 Note- if you have newly added some files, they will be untracked files, not tracked by the version control system. So stage all the files including untracked ones and then stash
 
-6. git checkout <branch name> : switch to a different branch
-7. git checkout -b <branch name> : to create a new branch from the branch you are currently on and switch on it
-8. git branch -d <branch name> : delete a branch
+6. git checkout `<branch name>` : switch to a different branch
+7. git checkout -b `<branch name>` : to create a new branch from the branch you are currently on and switch on it
+8. git branch -d `<branch name>` : delete a branch
 
 ---
 
@@ -207,7 +206,7 @@ Scenario: Raised a PR and got conflicts
 Solution :
 i. Git add and commit OR stage all the changes on current branch
 ii. checkout to dev and take a pull
-iii. git checkout <your feature branch>
+iii. git checkout `<your feature branch>`
 iv. git rebase dev
 
 If the problem still there

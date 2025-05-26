@@ -6,8 +6,8 @@ INTERVIEW QUESTIONS:
 4. What is a single page application?
 5. Explain client-server architecture?
 6. What is a server? Explain different types of servers like web server, database server, production server, development server, application server etc.
-7. Local servers -> local host
-8. Web browser -> Parts, features, functions, tools, plugins, add-ons etc.
+7. Local servers => local host
+8. Web browser => Parts, features, functions, tools, plugins, add-ons etc.
 9. Tools and IDEs used for web application development.
 10. What is a session? Why is it required?
 11. How session management takes place?
@@ -32,7 +32,7 @@ INTERVIEW QUESTIONS:
 30. Explain a web application architecture?
 31. Why are web applications so popular than standalone applications?
 32. Explain the difference between web design and web development?
-33. What is a readymade website template? -> UI Template and Architectural(boilerplate) template - Eg: Create React App - cra-rb
+33. What is a readymade website template? => UI Template and Architectural(boilerplate) template - Eg: Create React App - cra-rb
 34. Tell me something about the algorithms or business logic of web applications, in which language are they written, where do they run?
 35. Testing of a web application?
 36. Web application security and network security?
