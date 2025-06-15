@@ -16,7 +16,7 @@ SETUP CMD FILE SAMPLE OUTPUT:
 
 Storage account: ai102str2562112447
 {
-  "connectionString": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=ai102str2562112447;AccountKey=O91SNvAaRDg9IkDuFsrmdNGnG3JCAITx6lrfTO/BwCfXr/lxga0dedOiSWcdtoQEm9rh7hkVYokI+AStNYnyKw==;BlobEndpoint=https://ai102str2562112447.blob.core.windows.net/;FileEndpoint=https://ai102str2562112447.file.core.windows.net/;QueueEndpoint=https://ai102str2562112447.queue.core.windows.net/;TableEndpoint=https://ai102str2562112447.table.core.windows.net/"
+  "connectionString": ""
 }
 ----
 Azure AI Services account: ai102cog2562112447
