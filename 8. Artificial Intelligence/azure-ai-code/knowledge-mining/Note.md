@@ -4,7 +4,7 @@ Every folder has 4 files:
 2. index.json
 3. indexer.json
 4. skillset.json
-5. A command OR cmd file which contains script to run and take inputs from the above files. Sample response is given below.
+5. A command OR cmd file which contains script to run and take inputs from the above files.
 
 - All the files are similar with very minor changes.
 - create-search or update-search or modify-search cmd file creates a skillset, index and indexer in the Azure search resource.
