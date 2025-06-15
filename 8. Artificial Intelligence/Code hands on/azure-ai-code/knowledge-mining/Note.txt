@@ -1,0 +1,42 @@
+Every folder has 4 files:
+1.data_source.json
+2.index.json
+3.indexer.json
+4.skillset.json
+5.A command OR cmd file which contains script to run and take inputs from the above files. Sample response is given below.
+
+- All the files are similar with very minor changes.
+- create-search or update-search or modify-search cmd file creates a skillset, index and indexer in the Azure search resource.
+- Initially a setup file must be run whose sample output is given below. The script creates three resources in Azure resource group - 1.Azure search, 2.AI Services, 3.Azure storage container
+- The things from the below response must be used in the json files mentioned above.
+- Azure storage container contains the data for indexing. The data folder contains all the data for storage.
+- Right click on the folder containing cmd file and open in integrated terminal in vs code.then run the command - ./setup OR ./create-search etc to run the script. 
+-------------------------------------------------------------------------------------------------------
+SETUP CMD FILE SAMPLE OUTPUT:
+
+Storage account: ai102str2562112447
+{
+  "connectionString": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=ai102str2562112447;AccountKey=O91SNvAaRDg9IkDuFsrmdNGnG3JCAITx6lrfTO/BwCfXr/lxga0dedOiSWcdtoQEm9rh7hkVYokI+AStNYnyKw==;BlobEndpoint=https://ai102str2562112447.blob.core.windows.net/;FileEndpoint=https://ai102str2562112447.file.core.windows.net/;QueueEndpoint=https://ai102str2562112447.queue.core.windows.net/;TableEndpoint=https://ai102str2562112447.table.core.windows.net/"
+}
+----
+Azure AI Services account: ai102cog2562112447
+{
+  "key1": "d9de97dff24847e8a9d7dee7255cf25f",
+  "key2": "2fd6b3af23bb4994b90a1daee3c67462"
+}
+----
+Search Service: ai102srch
+ Url: https://ai102srch2562112447.search.windows.net
+ Admin Keys:
+{
+  "primaryKey": "ANKukzL5VW0ZfmTAY7tobjW3MK618fWqFPhF1iMyneAzSeDVCttA",
+  "secondaryKey": "XQgu3KN8X7PgapLxTmr8bw32fAgcMfyxLcfWFWr3oBAzSeAWr2Js"
+}
+ Query Keys:
+[
+  {
+    "key": "JZgmsqHrbRnio98sJPOumQYoVtoGI2uBiEVrmGOWmoAzSeCOQqgX",
+    "name": null
+  }
+]
+-------------------------------------------------------------------------------------------------------
