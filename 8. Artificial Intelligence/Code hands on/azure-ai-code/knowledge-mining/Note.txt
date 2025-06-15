@@ -21,21 +21,21 @@ Storage account: ai102str2562112447
 ----
 Azure AI Services account: ai102cog2562112447
 {
-  "key1": "d9de97dff24847e8a9d7dee7255cf25f",
-  "key2": "2fd6b3af23bb4994b90a1daee3c67462"
+  "key1": "",
+  "key2": ""
 }
 ----
 Search Service: ai102srch
  Url: https://ai102srch2562112447.search.windows.net
  Admin Keys:
 {
-  "primaryKey": "ANKukzL5VW0ZfmTAY7tobjW3MK618fWqFPhF1iMyneAzSeDVCttA",
-  "secondaryKey": "XQgu3KN8X7PgapLxTmr8bw32fAgcMfyxLcfWFWr3oBAzSeAWr2Js"
+  "primaryKey": "",
+  "secondaryKey": ""
 }
  Query Keys:
 [
   {
-    "key": "JZgmsqHrbRnio98sJPOumQYoVtoGI2uBiEVrmGOWmoAzSeCOQqgX",
+    "key": "",
     "name": null
   }
 ]
