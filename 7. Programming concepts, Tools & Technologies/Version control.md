@@ -256,3 +256,7 @@ GIT MERGE in main before raising PR:
 =====================================================================================
 
 - Commit delta changes, only selected files.
+
+---
+
+MERGE & DEPLOYMENT PROCESS:
