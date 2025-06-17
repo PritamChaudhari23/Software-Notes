@@ -35,35 +35,6 @@ Production - Live
 
 ---
 
-SOFTWARE TESTING:
-
-- UAT - client does it
-
-Project Testing:
-
-1. Alpha testing
-2. Beta testing
-3. Sanity testing
-4. Regression testing
-5. Unit testing
-6. Smoke testing
-7. Adhoc testing
-8. Penetration testing
-   Unit testing - done by developers before commiting and creating a merge request
-   Testing happens in both Dev and production environments.
-   Once deployed on dev - then test.
-   Then deployed on prod - then test.
-
-QA - Quality Assurance - Done during software development life cycle
-QC - Quality Control - Done during software testing life cycle, after production release.
-QC done by Client side software tester.
-
-Intermittent issues - Issues unable to reproduce on dev and QA end.
-
-- Try to force the error, try o simulate it if there are no steps to reproduce it. And then fix the code or handle such errors and situations in the code.
-
----
-
 PROJECT:
 SDLC - Software Development Lifecycle
 STLC - Software Testing Lifecycle
@@ -105,19 +76,10 @@ STLC - Software Testing Lifecycle
 - No pushing to prod on Friday
 - Coding test and client interview of billable resource before project onboarding
 
-Meetings:
-
-1. Kickoff meeting
-2. Scrum meeting
-3. Standup meeting
-4. Sprint planning
-5. Retrospective meetings - after sprints - 1.what went well? 2.what didn't go well?? 3.what could have been done better?
-
 Sprint:
 
 - Create stories but dont keep it in current sprint. Created backlog items. After sprint completion, pickup backlog items. Assign it story points - fibonnaci.
 - Be liberal in assigning story points, considering buffer time.
-
 - Meeting MOM (Minutes Of Meeting)
 - Dev & QA => Client => Client's client or End Users
 - Release management and Business approval
@@ -134,14 +96,6 @@ Devloper team
 Developers and testers must understand business requirements first. That is the source of knowledge for both. If both are on the same page only then the project can happen otherwise there will be miscommunication and conflicts between devs and QA.
 
 ===============================================================================================
-
-Service based organisation:
-Resource billing
-Shadow resources
-How does that organisation earn revenue?
-How much does the client pay?
-When does he do cost cutting?
-How is the client?
 
 Dev:
 

@@ -1,22 +1,30 @@
-Applications:
+SOFTWARE ORGANIZATION:
 
-1. Healthcare
-2. Logistics
-3. Supply chain management
-4. E-commerce
-5. Portals
-6. Service management
-7. Fintech
-8. ERP - Enterprise Resource Planning
-9. Enterprise application
-10. CRM - Customer relationship management
+Service based organisations - Outsourcing done by foreign organisations
+Product based organisations - All foreign organisations
 
-CRM Companies
+==============================================================
 
-1. Salesforce
-2. SAP
+Service based organisation:
+Resource billing
+Shadow resources
+How does that organisation earn revenue?
+How much does the client pay?
+When does he do cost cutting?
+How is the client?
 
-- What is ERP and CRM and CMS softwares?
+Townhall meetings
+
+---
+
+INDUSTRY THINGS:
+
+From CORE industries:
+
+- Poka-Yoke, Kaizen, 5S - Industrial management theories - Used in assembly line, in mechanical or core industry only OR it can be used in Software industry as well?
+- DFM Design For Manufacture - Product management
+
+---
 
 1. Wordpress
 2. Joomla
@@ -74,7 +82,7 @@ Lab tests ordering form:
 Form types:
 
 1. RPx
-2. PGx - Pharmacogenomics???
+2. PGx - Pharmacogenomics
 3. Blood
 4. Wound
 5. Core
@@ -92,27 +100,3 @@ Form types:
 - Test code compendium
 
 ---
-
-FINTECH - Financial Technology
-
-- Payment gateways
-- Net Banking
-- Online transactions
-- Mutual funds
-- Stock market
-- PhonePe, GPay, Paytm, wallets
-- UPI
-
----
-
-Service based organisations - Outsourcing done by foreign organisations
-Product based organisations - All foreign organisations
-
-From CORE industries:
-
-- Poka-Yoke, Kaizen, 5S - Industrial management theories - Used in assembly line, in mechanical or core industry only OR it can be used in Software industry as well?
-- DFM Design For Manufacture - Product management
-
----
-
-Townhall meetings

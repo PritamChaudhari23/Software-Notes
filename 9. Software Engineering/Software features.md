@@ -7,13 +7,45 @@ SOFTWARE TYPES:
 
 ---
 
-User experience:
+SOFTWARE APPLICATION TYPES:
 
-1. Responsive UI - Web app on desktop, laptop, phone, Mobile app orientation - portrait or landscape
-2. Popups on action completion or failure
-3. Loading spinner on action progress
-4. Dashboard/ landing page, splashscreens for mobile apps
-5. Multi language support
+1. Healthcare
+2. Logistics
+3. Supply chain management
+4. E-commerce
+5. Portals
+6. Service management
+7. Fintech
+8. ERP - Enterprise Resource Planning
+9. Enterprise application
+10. CRM - Customer relationship management => Salesforce, SAP
+
+==============================================================
+
+HEALTHCARE:
+
+==============================================================
+
+FINTECH - Financial Technology
+
+- Payment gateways
+- Net Banking
+- Online transactions
+- Mutual funds
+- Stock market
+- PhonePe, GPay, Paytm, wallets
+- UPI
+
+---
+
+---
+
+- Application suite - collection of many apps - Eg: Microsoft office 365, Google suite, Apple ecosystem
+- Lite version of a software application
+- Build upgrades and versioning
+- Changelog and Release notes in version upgrades
+- Pricing and Free trial/Enterprise trial
+- Premium features/ Freemium
 
 ---
 
@@ -31,13 +63,6 @@ User experience:
 - Anti piracy - Microsoft is aware that wiindows and office versions are used as crack or pirated versions in many systems across the world. Can they do anything about it? Same thing with torrent movies and software download
 
 ---
-
-- Application suite - collection of many apps - Eg: Microsoft office 365, Google suite, Apple ecosystem
-- Lite version of a software application
-- Build upgrades and versioning
-- Changelog and Release notes in version upgrades
-- Pricing and Free trial/Enterprise trial
-- Premium features/ Freemium
 
 ---
 
