@@ -1,28 +1,11 @@
 SOFTWARE DEVELOPMENT:
 
----
+PRODUCT DESIGN, PRODUCT DEVELOPMENT
 
-SOFTWARE TESTING:
+SDLC - Software Development Lifecycle
+STLC - Software Testing Lifecycle
 
----
-
-SOFTWARE PROJECT:
-
-People, Team members and their roles:
-Manager:
-Business Analyst:
-
----
-
-AGILE:
-
-======================================WORK IN PROGRESS====================================================
-
-SOFTWARE DEVELOPMENT:
-Product design
-Product development
-
-Environment:
+ENVIRONMENTS:
 
 1. Development
 2. UAT, Test environment
@@ -35,9 +18,15 @@ Production - Live
 
 ---
 
+SOFTWARE PROJECT:
+
+People, Team members and their roles:
+Manager:
+Business Analyst:
+
+---
+
 PROJECT:
-SDLC - Software Development Lifecycle
-STLC - Software Testing Lifecycle
 
 - Client Demo
 - Project flows
@@ -76,14 +65,6 @@ STLC - Software Testing Lifecycle
 - No pushing to prod on Friday
 - Coding test and client interview of billable resource before project onboarding
 
-Sprint:
-
-- Create stories but dont keep it in current sprint. Created backlog items. After sprint completion, pickup backlog items. Assign it story points - fibonnaci.
-- Be liberal in assigning story points, considering buffer time.
-- Meeting MOM (Minutes Of Meeting)
-- Dev & QA => Client => Client's client or End Users
-- Release management and Business approval
-
 ---
 
 Shadowbox: Agile project
@@ -97,21 +78,7 @@ Developers and testers must understand business requirements first. That is the 
 
 ===============================================================================================
 
-Dev:
-
-- Sandbox
-  Prod:
-- Production validation
-- Production live
-
-QA sequence => Test Sandbox(dev) => Test Production Validation
-QC => Test Production Live => QA should not place orders on live
-
 - Explore the GitHub repo of any product or library. To know how company or open source technology works technically.
 - Upgrading dependencies/libraries during ongoing project? Usually we don't upgrade to latest versions immediately, we wait for it to become stable?
 - After PR is merged => Jenkins automated pipeline triggered => new build created and deployed on dev instance
 - Write project documentation. MD file or story book. Developer guide. For new devs joining the team.
-- Spillovers
-- Adding the JIRA tickets in backlog.
-- Sprint planning
-- Retrospective meetings

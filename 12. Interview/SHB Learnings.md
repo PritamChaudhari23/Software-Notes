@@ -76,8 +76,6 @@ Timelines/ Estimates for the task:
 
 - Keep some buffer time in between, any schedule or plan must be flexible enough. Release if early completed.
 
-RTM:Requirements Traceability Matrix - Used for testing
-Agile: long tasks(epic) broken into smaller tasks (stories) put into two week development cycles (sprints).
 Build upgrades
 
 ---

@@ -32,6 +32,13 @@ Regression testing: Done to check if fix does not break existing
 Sanity testing:
 Unit Testing - Test a feature before releasing to QA. Fixing a bug or developin a feature should not break something else.
 
+RTM:Requirements Traceability Matrix - Used for testing
+
+QA shares the test plan while development is in progress
+
+- FVT test cases
+- Test suite
+
 ---
 
 - Try out, install new softwares
@@ -44,3 +51,6 @@ Exploring apps similar to what we are building.
 Testing and exploring the features of our competitor apps.
 
 ---
+
+QA sequence => Test Sandbox(dev) => Test Production Validation
+QC => Test Production Live => QA should not place orders on live
