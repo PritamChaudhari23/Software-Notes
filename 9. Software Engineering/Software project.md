@@ -80,51 +80,8 @@ WinMerge:
 2. Deploy on UAT - code pushed on UAT branch
 3. Deploy on production - code pushed on prod branch
 
----
-
-Task end to end process:
-
-- Ticket assigned to dev on JIRA
-- Analyse the task, prepare estimate and timeline if big task or change request
-- Do unit testing
-- Code reviewed and MR merged by team lead
-
-Dev => Unit testing => Deployment Dev server => QA => UAT on Dev server => Deployment on UAT branch => Deployment on Production branch => QA on production => UAT on production => QC on production => Assign to CS team to verify with the client
+Dev => Unit testing => Merge, build and deploy on Dev server => QA on dev server by dev => Merge, build and deploy on UAT server => QA on production => Merge, build and deploy on production server => QA on production => UAT on production => QC on production => Assign to CS team to verify with the client
 
 Dev => QA => QC => CS Team => Client
-
----
-
-Coding practices:
-Cross Teams work:
-Client interaction:
-Processes:
-Manager:
-Business Analyst:
-DevOps:
-Deployment:
-QA Team and QA Lead: QA round OR QA iteration
-Dev team: Technical Lead, Architect
-CS team:Client/Customer success
-TWINTIP TEAM: Cross Teams work
-
-People, Team members and their roles:
-Manager:
-Business Analyst:
-
----
-
-Timelines/ Estimates for the task:
-
-1. Sr. no.
-2. Task
-3. Total Man Days
-4. Start date
-5. End date
-6. Status
-
-- Keep some buffer time in between, any schedule or plan must be flexible enough. Release if early completed.
-
-Build upgrades
 
 ---

@@ -92,7 +92,15 @@ Generative AI:
 - Implement Retrieval Augmented Generation (RAG) with Azure OpenAI service
 - Fundamentals of Responsible Generative AI
 
-================================================================================================================
+---
+
+Azure AI Foundry/ Azure AI Studio:
+
+- AI Agents
+- Prompt flow
+- ....
+
+---
 
 FUNDAMENTALS:
 
