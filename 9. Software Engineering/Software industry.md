@@ -6,14 +6,20 @@ Product based organisations - All foreign organisations
 ==============================================================
 
 Service based organisation:
-Resource billing
-Shadow resources
-How does that organisation earn revenue?
-How much does the client pay?
-When does he do cost cutting?
-How is the client?
 
-Townhall meetings
+- Resource billing
+- Shadow resources
+- Resource sharing between multiple projects
+- Client interviews: Coding test and interview of billable resource before project onboarding
+- How does that organisation earn revenue?
+- How much does the client pay?
+- When does he do cost cutting?
+- How is the client?
+
+Things:
+
+- Townhall meetings
+- Freelancing
 
 ---
 

@@ -1,17 +1,16 @@
 SOFTWARE TESTING:
 
-- UAT - client does it
-
-Project Testing:
-
-1. Alpha testing
-2. Beta testing
-3. Sanity testing
-4. Regression testing
-5. Unit testing
-6. Smoke testing
-7. Adhoc testing
-8. Penetration testing
+| **Type**                         | **Description**                                                              |
+| -------------------------------- | ---------------------------------------------------------------------------- |
+| **Alpha Testing**                | Done by internal teams before releasing to external users.                   |
+| **Beta Testing**                 | Done by a limited number of external users before full release.              |
+| **Sanity Testing**               | Quick checks to ensure specific functionalities work after changes.          |
+| **Regression Testing**           | Ensures new code changes don't break existing features.                      |
+| **Unit Testing**                 | Done by developers before committing code and raising a merge request.       |
+| **Smoke Testing**                | Basic tests to confirm the build is stable enough for further testing.       |
+| **Ad-hoc Testing**               | Unstructured testing to find defects without predefined test cases.          |
+| **Penetration Testing**          | Security testing to find vulnerabilities. Often handled by security experts. |
+| **UAT(User Acceptance Testing)** | Done by client                                                               |
 
 Unit testing - done by developers before commiting and creating a merge request
 Testing happens in both Dev and production environments.
