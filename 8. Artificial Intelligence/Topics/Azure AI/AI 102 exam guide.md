@@ -136,6 +136,7 @@
 ---
 
 3. Analyze videos:
+
    - Use Azure AI Video Indexer to extract insights from a video or live stream
    - Use Azure AI Vision Spatial Analysis to detect presence and movement of people in video
 
@@ -230,6 +231,7 @@
 **Plan and manage an Azure AI solution (15–20%)**
 
 1. Select the appropriate Azure AI service:
+
    - Select the appropriate service for a computer vision solution
    - Select the appropriate service for a natural language processing solution
    - Select the appropriate service for a speech solution
@@ -250,6 +252,7 @@
 ---
 
 3. Manage, monitor, and secure an Azure AI service:
+
    - Configure diagnostic logging
    - Monitor an Azure AI resource
    - Manage costs for Azure AI services
@@ -263,6 +266,7 @@
 **Implement content moderation solutions (10–15%)**
 
 1. Create solutions for content delivery:
+
    - Implement a text moderation solution with Azure AI Content Safety
    - Implement an image moderation solution with Azure AI Content Safety
 
@@ -271,6 +275,7 @@
 **Implement computer vision solutions (15–20%)**
 
 1. Analyze images:
+
    - Select visual features to meet image processing requirements
    - Detect objects in images and generate image tags
    - Include image analysis features in an image processing request
@@ -281,6 +286,7 @@
 ---
 
 2. Implement custom computer vision models by using Azure AI Vision:
+
    - Choose between image classification and object detection models
    - Label images
    - Train a custom image model, including image classification and object detection
@@ -291,6 +297,7 @@
 ---
 
 3. Analyze videos:
+
    - Use Azure AI Video Indexer to extract insights from a video or live stream
    - Use Azure AI Vision Spatial Analysis to detect presence and movement of people in video
 
@@ -299,6 +306,7 @@
 **Implement natural language processing solutions (30–35%)**
 
 1. Analyze text by using Azure AI Language:
+
    - Extract key phrases
    - Extract entities
    - Determine sentiment of text
@@ -308,6 +316,7 @@
 ---
 
 2. Process speech by using Azure AI Speech:
+
    - Implement text-to-speech
    - Implement speech-to-text
    - Improve text-to-speech by using Speech Synthesis Markup Language (SSML)
@@ -318,6 +327,7 @@
 ---
 
 3. Translate language:
+
    - Translate text and documents by using the Azure AI Translator service
    - Implement custom translation, including training, improving, and publishing a custom model
    - Translate speech-to-speech by using the Azure AI Speech service
@@ -327,6 +337,7 @@
 ---
 
 4. Implement and manage a language understanding model by using Azure AI Language:
+
    - Create intents and add utterances
    - Create entities
    - Train, evaluate, deploy, and test a language understanding model
@@ -337,6 +348,7 @@
 ---
 
 5. Create a question answering solution by using Azure AI Language:
+
    - Create a question answering project
    - Add question-and-answer pairs manually
    - Import sources
@@ -353,6 +365,7 @@
 **Implement knowledge mining and document intelligence solutions (10–15%)**
 
 1. Implement an Azure AI Search solution:
+
    - Provision an Azure AI Search resource
    - Create data sources
    - Create an index
@@ -365,6 +378,7 @@
 ---
 
 2. Implement an Azure AI Document Intelligence solution:
+
    - Provision a Document Intelligence resource
    - Use prebuilt models to extract data from documents
    - Implement a custom document intelligence model
@@ -377,6 +391,7 @@
 **Implement generative AI solutions (10–15%)**
 
 1. Use Azure OpenAI Service to generate content:
+
    - Provision an Azure OpenAI Service resource
    - Select and deploy an Azure OpenAI model
    - Submit prompts to generate natural language
@@ -387,6 +402,7 @@
 ---
 
 2. Optimize generative AI:
+
    - Configure parameters to control generative behavior
    - Apply prompt engineering techniques to improve responses
    - Use your own data with an Azure OpenAI model
