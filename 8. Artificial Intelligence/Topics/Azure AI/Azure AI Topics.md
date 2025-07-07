@@ -110,15 +110,11 @@ Microsoft Azure AI Fundamentals: AI Overview:
 2. Fundamentals of Machine Learning
 3. Fundamentals of Azure AI services
 
----
-
 Microsoft Azure AI Fundamentals: Computer Vision:
 
 1. Fundamentals of Computer Vison
 2. Fundamentals of Facial Recognition
 3. Fundamentals of Optical Character Recognition
-
----
 
 Microsoft Azure AI Fundamentals: Natural Language Processing:
 
@@ -127,20 +123,42 @@ Microsoft Azure AI Fundamentals: Natural Language Processing:
 3. Fundamentals of conversational language understanding
 4. Fundamentals of Azure AI Speech
 
----
-
 Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining:
 
 1. Fundamentals of Azure AI Document Intelligence
 2. Fundamentals of Knowledge Mining and Azure AI search
-
----
 
 Microsoft Azure AI Fundamentals: Generative AI:
 
 1. Fundamentals of Generative AI
 2. Fundamentals of Azure OpenAI service
 3. Fundamentals of Responsible Generative AI
+
+NEW:
+
+Introduction to AI concepts
+
+Introduction to machine learning concepts
+
+Get started with machine learning in Azure
+
+Introduction to generative AI
+
+Get started with generative AI in Azure
+
+Introduction to natural language processing concepts
+
+Get started with natural language processing in Azure
+
+Get started with speech in Azure
+
+Introduction to computer vision concepts
+
+Get started with computer vision in Azure
+
+Introduction to AI-powered information extraction concepts
+
+Get started with AI-powered information extraction in Azure
 
 ---
 
