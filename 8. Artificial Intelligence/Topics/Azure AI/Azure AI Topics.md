@@ -98,7 +98,7 @@ Azure AI Foundry/ Azure AI Studio:
 
 - AI Agents
 - Prompt flow
-- ....
+- Foundry model catalog
 
 ---
 
