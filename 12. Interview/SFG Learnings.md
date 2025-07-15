@@ -30,7 +30,11 @@ Shell.PageActions
 
 ---
 
-**AUTHENTICATION:** Liberty server
+**AUTHENTICATION:**
+
+- OIDC
+- What is identity server?
+- What is liberty server?
 
 ---
 
@@ -53,6 +57,8 @@ Shell.PageActions
 **MONOREPO:**
 
 - Turborepo build system and Yarn workspaces
+- Turborepo - turbo.json - only in b2bi shared
+- Turborepo - Build system for monorepo application
 - b2bi-ui-shared => packages - build-lib - login - sample-app
 - gatewayui => i.sfg-sanity-test, ii.sfg-ui
 
