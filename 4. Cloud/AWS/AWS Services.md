@@ -1,3 +1,179 @@
+CLOUD COMPUTING:
+
+Core cloud & AWS fundamentals:
+
+- **Identity & Access Management:**
+
+  - IAM: Identity and Access Management
+  - IAM Policies, Roles, Groups, MFA
+  - AWS STS (Security Token Service)
+  - AWS Directory Services (AD, AD Connector, Simple AD)
+  - Amazon Cognito (for user identity/auth in apps)
+
+- **AWS Interfaces & Tools:**
+
+  - AWS Management Console
+  - AWS CLI
+  - AWS SDK
+  - AWS CloudShell
+  - EC2 Instance Connect
+
+- **Availability Concepts:**
+
+  - AZ (Availability Zone)
+  - ENI (Elastic Network Interface)
+
+---
+
+Compute / VM:
+
+- EC2 (Elastic Compute Cloud)
+- EC2 Instance Store
+- AMI (Amazon Machine Image)
+- EBS (Elastic Block Store)
+- EFS (Elastic File System)
+- ELB (Elastic Load Balancer)
+
+  - CLB / ALB / NLB / GWLB
+
+- Auto Scaling Groups (ASG)
+- AWS Elastic Beanstalk
+- AWS EC2 Nitro Enclaves
+
+---
+
+Database services:
+
+1. Amazon RDS: Relational Database Service (MySQL, PostgreSQL, MariaDB, Oracle, SQL Server)
+2. Amazon Aurora
+3. Amazon RDS Proxy
+4. Amazon ElastiCache - Redis / Memcached
+5. Amazon MemoryDB
+6. Amazon DynamoDB
+7. DAX (DynamoDB Accelerator)
+8. Amazon Athena (Serverless SQL engine)
+
+---
+
+Storage:
+
+- Amazon S3 (Standard, IA, Glacier)
+- Amazon EBS
+- Amazon EFS
+- S3 Lifecycle Policies
+- AWS Storage Classes
+- AWS Backup (not in your list, but relevant)
+
+---
+
+Containerization & Orchestration:
+
+1. Amazon ECS: Elastic Container Service
+2. AWS Fargate (Serverless containers)
+3. Amazon ECR: Elastic Container Registry
+4. Amazon EKS: Elastic Kubernetes Service
+5. AWS Copilot
+6. AWS App Mesh (optional, not listed)
+7. AWS Cloud Map (service discovery)
+
+---
+
+Deployment & Infrastructure as a Code:
+
+- AWS CloudFormation
+- AWS CDK (Cloud Development Kit)
+- AWS Elastic Beanstalk
+- AWS AppConfig
+
+---
+
+CICD & DevOps tools:
+
+1. AWS CodeCommit (Git repository)
+2. AWS CodePipeline (Orchestration)
+3. AWS CodeBuild (Build service)
+4. AWS CodeDeploy (Deployment automation)
+5. AWS CodeStar (DevOps project management)
+6. AWS CodeArtifact (Artifact repository)
+7. AWS CodeGuru (Code review & profiling)
+8. AWS Cloud9 (Cloud IDE)
+
+---
+
+Monitoring, Troubleshooting & Audit:
+
+1. Amazon CloudWatch: Metrics, Logs, Alarms, Synthetics Canary
+2. AWS CloudTrail (API audit logging)
+3. Amazon EventBridge (event-driven architecture, formerly CloudWatch Events)
+4. AWS X-Ray (distributed tracing)
+5. AWS Distro for OpenTelemetry
+6. Amazon Macie (data security for S3)
+7. CloudWatch Evidently (feature flags)
+
+---
+
+Integration & Messaging:
+
+1. Amazon SQS: Simple Queue Service
+2. Amazon SNS: Simple Notification Service
+3. Amazon Kinesis:
+   - Data Streams
+   - Data Firehose
+   - Data Analytics
+   - KCL (Kinesis Client Library)
+4. Amazon EventBridge
+
+---
+
+Networking & DNS:
+
+- Amazon VPC (Virtual Private Cloud)
+- Route 53 (DNS & routing)
+- Security Groups
+- NACLs (Not listed but important)
+- VPC Peering / Transit Gateway (optional)
+- Direct Connect (for hybrid networking)
+
+---
+
+Serverless Services:
+
+1. AWS Lambda
+2. Amazon DynamoDB
+3. Amazon API Gateway
+4. AWS SAM (Serverless Application Model)
+5. AWS Step Functions (Workflows)
+6. AWS AppSync (GraphQL API)
+7. AWS Amplify (Frontend + backend tooling)
+
+---
+
+Security & Encryption:
+
+1. AWS KMS: Key Management Service
+2. AWS Secrets Manager
+3. SSM Parameter Store
+4. AWS CloudHSM
+5. AWS WAF / Shield (not listed, but useful)
+6. AWS Certificate Manager (ACM)
+7. AWS Private CA
+8. AWS EC2 Nitro enclave
+
+---
+
+Miscellaneous / Specialized Services:
+
+1. Amazon SES (Simple Email Service)
+2. Amazon OpenSearch (search engine & log analytics)
+3. Amazon MSK (Managed Kafka)
+4. AWS FIS (Fault Injection Simulator)
+5. Amazon EC2 Systems Manager
+6. AWS Cloud Map (Service discovery)
+7. AWS Step Functions
+8. AWS AppConfig
+
+---
+
 1. IAM: Identity and Access Management
 
 ---
@@ -15,18 +191,6 @@ Compute:
 10. NLB: Network load Balancer
 11. GWLB: Gateway Load Balancer
 12. ASG: Auto Scaling Groups
-
----
-
-AWS Database:
-
-13. Amazon RDS: Relational Database Service
-14. Amazon Aurora
-15. Amazon RDS Proxy
-16. Amazon ElastiCache
-17. Redis
-18. Memcached
-19. Amazon MemoryDB
 
 ---
 
@@ -51,78 +215,11 @@ AWS Database:
 
 ---
 
-Containerization:
-
-29. Amazon ECS: Elastic Container Service
-30. AWS Fargate
-31. Amazon ECR: Elastic Container Registry
-32. AWS Copilot
-33. Amazon EKS: Elastic Kubernetes Service
-
----
-
 34. AWS Elastic Beanstalk
 
 ---
 
-AWS CICD:
-
-35. AWS CodeCommit
-36. AWS CodePipeline
-37. AWS CodeBuild
-38. AWS CodeDeploy
-39. AWS CodeStar
-40. AWS CodeArtifact
-41. AWS CodeGuru
-42. AWS Cloud9
-
----
-
 43. AWS CloudFormation
-
----
-
-AWS Monitoring, Troubleshooting & Audit:
-
-44. AWS CloudWatch
-45. CloudWatch Metrics
-46. CloudWatch Logs
-47. CloudWatch Alarms
-48. CloudWatch Synthetics Canary
-49. Amazon Eventbridge (formerly CloudWatch Events)
-50. AWS X-Ray
-51. AWS Distro
-52. AWS CloudTrail
-
----
-
-AWS Integration & Messaging:
-
-53. Amazon SQS: Simple Queue Service
-54. Amazon SNS: Simple Notification Service
-55. Amazon Kinesis
-56. Kinesis Data Streams
-57. Kinesis Client Library (KCL)
-58. Kinesis Data Firehose
-59. Kinesis Data Analytics
-
----
-
-Serverless:
-
-60. Lambda Functions
-61. Dynamo DB
-62. DynamoDB Accelerator (DAX)
-63. API Gateway
-64. Serverless Application Model (SAM)
-
----
-
-Other Serverless:
-
-65. AWS Step functions
-66. AWS AppSync
-67. AWS Amplify
 
 ---
 
@@ -135,16 +232,6 @@ Advanced Identity:
 
 70. AWS STS - Security Token Service
 71. AWS Directory services - AWS Managed Microsoft AD, AD Connector, Simple AD
-
----
-
-AWS Security & Encryption:
-
-72. AWS KMS: Key Management Service
-73. AWS CloudHSM
-74. AWS Secrets Manager
-75. SSM Parameter Store
-76. AWS EC2 Nitro enclave
 
 ---
 
