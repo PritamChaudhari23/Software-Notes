@@ -2,43 +2,40 @@ CLOUD COMPUTING:
 
 Core cloud & AWS fundamentals:
 
-- **Identity & Access Management:**
-
-  - IAM: Identity and Access Management
-  - IAM Policies, Roles, Groups, MFA
-  - AWS STS (Security Token Service)
-  - AWS Directory Services (AD, AD Connector, Simple AD)
-  - Amazon Cognito (for user identity/auth in apps)
-
-- **AWS Interfaces & Tools:**
-
-  - AWS Management Console
-  - AWS CLI
-  - AWS SDK
-  - AWS CloudShell
-  - EC2 Instance Connect
-
-- **Availability Concepts:**
-
-  - AZ (Availability Zone)
-  - ENI (Elastic Network Interface)
+1. AWS Global infrastructure - Regions, AZ, Data centers, Edge locations, PoPs
+2. AWS Interfaces & tools:
+   - AWS Management Console
+   - AWS CLI
+   - AWS SDK
+   - AWS CloudShell
+   - EC2 Instance Connect
+3. Identity & Access Management:
+   - IAM Policies, Roles, Groups, MFA
+   - AWS STS (Security Token Service)
+   - AWS Directory Services (AD, AD Connector, Simple AD)
+   - Amazon Cognito (for user identity/auth in apps)
 
 ---
 
 Compute / VM:
 
-- EC2 (Elastic Compute Cloud)
-- EC2 Instance Store
-- AMI (Amazon Machine Image)
-- EBS (Elastic Block Store)
-- EFS (Elastic File System)
-- ELB (Elastic Load Balancer)
+1. EC2: Elastic Compute Cloud
+2. EBS: Elastic Block Store volume
+3. AMI: Amazon Machine Image
+4. EC2 Instance Store
+5. EFS: Elastic File System
+6. ELB: Elastic Load Balancer
+   - CLB: Classic Load Balancer
+   - ALB: Application Load Balancer
+   - NLB: Network load Balancer
+   - GWLB: Gateway Load Balancer
+7. ASG: Auto Scaling Groups
 
-  - CLB / ALB / NLB / GWLB
+EC2 Services:
 
-- Auto Scaling Groups (ASG)
-- AWS Elastic Beanstalk
-- AWS EC2 Nitro Enclaves
+Storage:
+
+Security:
 
 ---
 
@@ -81,7 +78,7 @@ Containerization & Orchestration:
 Deployment & Infrastructure as a Code:
 
 - AWS CloudFormation
-- AWS CDK (Cloud Development Kit)
+- AWS CDK: Cloud Development Kit
 - AWS Elastic Beanstalk
 - AWS AppConfig
 
@@ -127,12 +124,13 @@ Integration & Messaging:
 
 Networking & DNS:
 
-- Amazon VPC (Virtual Private Cloud)
-- Route 53 (DNS & routing)
-- Security Groups
-- NACLs (Not listed but important)
-- VPC Peering / Transit Gateway (optional)
-- Direct Connect (for hybrid networking)
+1. Route 53 (DNS & routing)
+2. AWS CloudFront
+3. VPC: Virtual Private Cloud
+4. Security Groups
+5. NACLs (Not listed but important)
+6. VPC Peering / Transit Gateway (optional)
+7. Direct Connect (for hybrid networking)
 
 ---
 
@@ -156,7 +154,7 @@ Security & Encryption:
 4. AWS CloudHSM
 5. AWS WAF / Shield (not listed, but useful)
 6. AWS Certificate Manager (ACM)
-7. AWS Private CA
+7. AWS Private Certificate Authority (CA)
 8. AWS EC2 Nitro enclave
 
 ---
@@ -164,99 +162,12 @@ Security & Encryption:
 Miscellaneous / Specialized Services:
 
 1. Amazon SES (Simple Email Service)
-2. Amazon OpenSearch (search engine & log analytics)
+2. Amazon OpenSearch (search engine & log analytics, formerly Amazon Elasticsearch Service - Amazon ES)
 3. Amazon MSK (Managed Kafka)
-4. AWS FIS (Fault Injection Simulator)
+4. AWS FIS: Fault Injection Simulator
 5. Amazon EC2 Systems Manager
 6. AWS Cloud Map (Service discovery)
 7. AWS Step Functions
 8. AWS AppConfig
-
----
-
-1. IAM: Identity and Access Management
-
----
-
-Compute:
-
-2. EC2: Elastic Compute Cloud
-3. EBS: Elastic Block Store volume
-4. AMI: Amazon Machine Image
-5. EC2 Instance Store
-6. EFS: Elastic File System
-7. ELB: Elastic Load Balancer
-8. CLB: Classic Load Balancer
-9. ALB: Application Load Balancer
-10. NLB: Network load Balancer
-11. GWLB: Gateway Load Balancer
-12. ASG: Auto Scaling Groups
-
----
-
-20. Route 53
-21. VPC: Virtual Private Cloud
-22. Security Groups
-
----
-
-23. Amazon S3: Simple Storage Service
-
----
-
-24. AWS CLI
-25. AWS Management Console
-26. AWS SDK
-27. AWS Cloudshell, EC2 Instance connect
-
----
-
-28. AWS CloudFront
-
----
-
-34. AWS Elastic Beanstalk
-
----
-
-43. AWS CloudFormation
-
----
-
-68. AWS CDK: Cloud Development Kit
-69. Amazon Cognito
-
----
-
-Advanced Identity:
-
-70. AWS STS - Security Token Service
-71. AWS Directory services - AWS Managed Microsoft AD, AD Connector, Simple AD
-
----
-
-Misc:
-
-77. Amazon SES - Simple Email Service
-78. Amazon OpenSearch (formerly Amazon Elasticsearch Service - Amazon ES)
-79. Amazon Athena: Data analytics service
-80. Amazon MSK - Managed Streaming for Apache Kafka
-81. Amazon Cerificate Manager (ACM)
-82. AWS Private Certificate Authority (CA)
-83. Amazon Macie
-84. AWS AppConfig
-85. Cloudwatch Evidently
-
----
-
-86. AWS Cloud Map
-87. AWS FIS: Fault Injection Simulator
-88. Amazon EC2 Systems Manager
-
----
-
-- AZ: Availability Zone
-- CICD: Continuous Integration and Continuous Delivery/Deployment
-- ENI: Elastic Network Interface
 
 ---
