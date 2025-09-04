@@ -141,3 +141,10 @@ AWS, CLOUD:
 - Pub sub
 
 ---
+
+RBAC:
+
+- The role and permission is received in the API response for a particular resource.
+- Based on the permissions in response, we can show/hide the screens or allow/deny actions to users on a screen.
+
+---
