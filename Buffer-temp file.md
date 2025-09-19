@@ -12,6 +12,12 @@ JAVASCRIPT:
 - What are default parameters in a javascript function?
 - Finding out which elements from one array belong to other array using some object property => Running loop over two arrays - No, Use filter and some
 
+CLOSURE:
+
+**Function nesting** is when a function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed out.
+
+A **closure** is a function that retains access to variables from its **lexical scope** , even after the outer function has finished executing.
+
 ---
 
 REACT:
@@ -146,5 +152,13 @@ RBAC:
 
 - The role and permission is received in the API response for a particular resource.
 - Based on the permissions in response, we can show/hide the screens or allow/deny actions to users on a screen.
+- Permissions for create, read, update, delete (CRUD) a resource.
 
 ---
+
+- Frontend - AI use
+- Frontend - How to automate or build a tool or framework to create HTML pages or components, configuration based UI.
+- Backend - API - Support should be there for - Search, Sort, Filter, Pagination.
+- Backend - API errors - Throw meaningful messages for API errors, send exceptions, error code and relevant message in response.
+- Developer testing - Manual testing, automation testing
+- UI Tasks - UX Handoff, UI development, API integration, Testing
