@@ -1,4 +1,4 @@
-1.DEBUGGING SKILLS:
+DEBUGGING SKILLS:
 
 Basic debugging:
 
@@ -52,20 +52,33 @@ Misc:
 
 ---
 
-2.SELF LEARNING:
+SELF LEARNING:
+
 Daily: 1 or 2 hrs - 9 to 12 PM
 Other: 1 hr
 
+1. Learning - new things
+2. Core skills - Debugging, problem solving, critical, analytical thinking, being useful in a project
+
+- Some days when we have less work, no work or work is finished faster - First thing!!! Don't inform your manager!!!!
+- It's one thing to learn new technology, some udemy course, youtube, blog, chatGPT or building hobby project. But its completely different to contribute to ongoing production app or a project.
+- Learning, having knowledge is one thing and being able to contribute to a project is different.
+- Explore the GitHub repo of any product or library. To know how company or open source technology works technically.
+- Upgrading dependencies/libraries during ongoing project? Usually we don't upgrade to latest versions immediately, we wait for it to become stable?
+- Developers and testers must understand business requirements first. That is the source of knowledge for both. If both are on the same page only then the project can happen otherwise there will be miscommunication and conflicts between devs and QA.
+
 ---
 
-3.PRODUCTIVITY EXPECTATIONS:
+PRODUCTIVITY EXPECTATIONS:
+
 Working day: 8 hrs.
 Productivity: 5 hrs.
 
-- Three stages:
-  1.Morning - before meeting - 9 to 10 AM - 1hr
-  2.Afternoon - post lunch - 2 to 5 PM - 2hrs
-  3.Evening - post tea break - 5 to 8 PM - 2hrs
+Three stages:
+
+1. Morning - before meeting - 9 to 10 AM - 1hr
+2. Afternoon - post lunch - 2 to 5 PM - 2hrs
+3. Evening - post tea break - 5 to 8 PM - 2hrs
 
 Expectations:
 
@@ -73,13 +86,17 @@ Expectations:
 - Good logic and analysis
 - Good conceptual knowledge
 - Good project knowledge
+- Spend half to one hour daily to understand repo
 - Speed
 - Complexity of task and the skill level or experience. More tasks completed in less time.
 - Learning new things, exploring for the project work
+- Be confident in your development
+- Shift your gears
+- Projects process and compliance
 
 ---
 
-4.WORK PROJECT PERFORMANCE:
+WORK PROJECT PERFORMANCE:
 
 Before starting any work:
 
@@ -87,6 +104,8 @@ Before starting any work:
 - Asking any doubts, queries, questions to UX or required person
 - Getting test plan from QA
 - Giving proper estimates for work
+- Create subtasks immidiately under the story - What is the scope of this story? What are the things I need to implement as a part of this story?
+- Set weekly target: No. of stories / No. of weeks in sprint
 
 During development:
 
@@ -97,6 +116,7 @@ After development:
 - Debugging
 - Testing
 - Refactoring
+- Doing peer review
 
 Defect:
 
@@ -109,36 +129,55 @@ HIGHER MANAGEMENT:
 - How tracking works: The JIRA ticket number must be included in the commit message. This links the commit to the corresponding PR, and within the JIRA ticket’s side panel (under the Development section), you can view the related branches and commits.
 - At the end of each sprint, reports are generated and audits are conducted. If any discrepancies or gaps are identified, questions and justifications may be requested.
 
-  5.WORK QUALITY:
+WORK QUALITY:
 
 - Debugging
 - Refactoring
 - Testing
 
-  6.WORK & TIME MANAGEMENT:
+WORK & TIME MANAGEMENT:
 
 - Work
 - Learning
 - Other (Project, practice, preparation etc) - Can plan on only weekends or holidays as well
 
-  7.SIDE TASKS: Non Coding work
+SIDE TASKS: Non Coding work
 
-  8.PAIN POINTS/CHALLENGES:
+PAIN POINTS/CHALLENGES:
+
+- Unable to estimate properly - major point !!!
+- Side tasks consume time
+- Feeling sleepy, lazy, lethargic
+- Unable to pay attention in meetings
+- Too much work apart from coding Jira board
+- Too many meetings
+- Too many Side tasks
+- Getting foggy unable to understand sometimes
+- Not clear communication sometimes
+- In between tasks take time
+- JIRA board activities are time consuming and frustrating
+- It feels like complete chaos and confusion
+- Juggling and multitasking
+- Asking basic questions
+- SIDE TASKS: Major point
+- Sometimes I just feel stuck...not able to think forward
+- Some people get it immidiately and why couldn't I think of that
 
 ---
 
-9.SOFT SKILLS:
+SOFT SKILLS:
 
 - Good english
 - Skillful communication
   - Highlight blockers, dependencies in time
+  - Getting the context. What that person has to say.
   - Giving proper context, technical details for engineers, summaries for managers or executives - So summarization is important
 - Good planning and management
 - Proactive approach and leadership
 
 ---
 
-10.MIND SKILLS:
+MIND SKILLS:
 
 - Focus
 - Grasping
@@ -149,74 +188,15 @@ HIGHER MANAGEMENT:
 
 ---
 
-11.WORK LIFE BALANCE:
+WORK LIFE BALANCE:
 
 - Learn to manage work stress
 - Take some breaks while working. Refresh your mood.
 - Handle pressure and learn to remain calm
 - Develop a mindset. About work and coding.
 - Develop a thick skin, emotional resiliance
-
----
-
-PAIN POINTS:
-1.Feeling sleepy, lazy, lethargic
-1.Unable to pay attention in meetings
-2.Too much work apart from coding Jira board 3. Too many meetings 4. Too many Side tasks 5. Getting foggy unable to understand sometimes 6. Not clear communication sometimes 7. In between tasks take time 8. JIRA board activities are time consuming and frustrating 9. It feels like complete chaos and confusion 10. Juggling and multitasking 11. Testing, refactoring, debugging 12. Asking basic questions
-
-SIDE TASKS: Major point
-UNABLE TO ESTIMATE PROPERLY - BIGGGGGEST PROBLEM!!!!
-
----
-
-GOOD DEVELOPER:
-
-- Two parts:
-
-1. Learning - new things
-2. Core skills - Debugging, problem solving, critical, analytical thinking, being useful in a project
-   It's one thing to learn new technology, some udemy course, youtube, blog, chatGPT or building hobby project. But its completely different to contribute to ongoing production app or a project.
-
-- Explore the GitHub repo of any product or library. To know how company or open source technology works technically.
-- Upgrading dependencies/libraries during ongoing project? Usually we don't upgrade to latest versions immediately, we wait for it to become stable?
-- Developers and testers must understand business requirements first. That is the source of knowledge for both. If both are on the same page only then the project can happen otherwise there will be miscommunication and conflicts between devs and QA.
-
----
-
-- Improve the debugging
-- Be confident in your development
-- Shift your gears
-- Sometimes I just feel stuck...not able to think forward
-- Some people get it immidiately and why couldn't I think of that
-- Projects process and compliance
-- Soft skills
-
-2. Communication
-3. Understanding the requirements
-
----
-
-PRODUCTIVITY EXPECTATIONS:
-WORK:
-
-- Set weekly target: No. of stories / No. of weeks in sprint
-- Create subtasks immidiately under the story - What is the scope of this story? What are the things I need to implement as a part of this story?
-
----
-
 - Make meeting notes
 - List of action items
 - Use Pomodoro - 45 + 15 min - work + take breaks
-- Spend half to one hour daily to understand repo
-- Doing peer review
-
----
-
-- Focus
-- Retention
-- Soft skills: Communication, management etc...
-- Sleep/Laziness/Lethargy!!!
-- Some days when we have less work, no work or work is finished faster - First thing!!! Don't inform your manager!!!!
-- Learning, having knowledge is one thing and being able to contribute to a project is different.
 
 ---
