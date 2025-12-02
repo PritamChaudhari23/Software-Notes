@@ -32,3 +32,39 @@ named exports: export default {...., .....} <-- Used when multiple functions are
 - Use a type: 'commonjs' or type: 'module' in package.json. commonjs type is default
 
 ---
+
+- Concept of default and named import/export
+- Named alias for default and named import/export
+
+// Default export
+export default function add(a, b) {
+return a + b;
+}
+
+// Named exports
+export function subtract(a, b) {
+return a - b;
+}
+
+export function multiply(a, b) {
+return a \* b;
+}
+
+// Import default export with alias
+import sum from './mathUtils'; // 'sum' is an alias for the default 'add' function
+
+// Import named exports with and without alias
+import { subtract, multiply as times } from './mathUtils';
+// 'subtract' is used as-is
+// 'multiply' is aliased locally as 'times'
+
+// Usage
+console.log(sum(5, 3)); // 8
+console.log(subtract(5, 3)); // 2
+console.log(times(5, 3)); // 15
+
+import { TextInput as CDSTextInput } from '@carbon/react';
+
+- Important add this: Examples of relative(from reference of the current file) and absolute paths (from root level)
+
+---

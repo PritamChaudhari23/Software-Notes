@@ -91,6 +91,7 @@ WEB SERVER:
 - IIS (Internet Information Services): Microsoft .NET
 - nginx
 - WAMP server: PHP
+- Web server: A software that handles http requests and sends response. Eg: Apache HTTP Server, Nginx, Microsoft IIS, Express (Node.js)
 
 ---
 
