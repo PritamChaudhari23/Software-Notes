@@ -9,6 +9,7 @@ REACT:
 - React project - colour constants and string constants for entire project
 - Testing react application - Test on all browsers and mobile
 - Passing data between components - lifting state up and prop drilling (add prop drilling in notes)
+- Frequently asked javascript and react code interview questions - Type: Spot error, tell output - check with chatgpt
 
 ---
 
