@@ -1,9 +1,9 @@
 REACT:
 
 1. How to create a custom hook?
+2. How to create a reusable UI component, maybe from a UI library?
+3. How to create datatable component and reuse it for list api
 
-- How to create a reusable UI component, maybe from a UI library?
-- How to create datatable component and reuse it for list api
 - Interview question types - 1.Given code snippet - Find error, 2.Given code snippet - find output
 - Common react situation; UI renders before API response in arrived.
 - React project - colour constants and string constants for entire project
@@ -14,7 +14,7 @@ REACT:
 ---
 
 const MyComponent = ({ name, ...props }) => { // rest in function signature in argument
-return <div {...props}>{name}`</div>`; // Spread the received props onto the div
+return <div {...props}>{name}</div>; // Spread the received props onto the div
 };
 
 - using rest in the argument and spread inside the component
