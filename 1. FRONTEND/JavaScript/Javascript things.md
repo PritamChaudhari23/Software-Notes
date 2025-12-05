@@ -90,8 +90,8 @@ HTML String:
 
 HTML Document:
 
-1. HTML DOM -> HTML String
-2. HTML String -> HTML DOM
+1. HTML DOM => HTML String
+2. HTML String => HTML DOM
    const parser = new DOMParser();
    var HTMLDocumentDOM = parser.parseFromString(htmlString, "text/html");
 
@@ -106,7 +106,7 @@ BASE 64:
 - Encoded format of PDF, image, HTML page etc in the form of long string of characters.
 - Binary string: A representation of a file format (Eg: HTML, PDF, Image etc.) as a string of binary numbers.
 - Any media type with any extension can be converted to base64 and vice versa.
-- File <-> Binary string <-> Base64 <-> File
+- File <=> Binary string <=> Base64 <=> File
 
 btoa() - Binary string to Base 64
 atob() - Base 64 to Binary string

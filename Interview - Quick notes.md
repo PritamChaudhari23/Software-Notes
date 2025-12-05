@@ -4,9 +4,14 @@ JAVASCRIPT
 
 REACT
 
+Reconciliation:
+
 ---
 
-NEXT JS
+NEXT JS:
+
+- Next js is a **react framework** developed by **Vercel**, which is used to build **modern web applications**.
+- It has lot of powerful features like.....
 
 ---
 

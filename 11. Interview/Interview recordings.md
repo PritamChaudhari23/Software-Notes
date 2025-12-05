@@ -14,7 +14,7 @@ JS
 8. Promise vs callback
 9. arrow fn demo
 10. callback fn demo
-11. recursive fn, given int - 4 -> 4+3+2+1...
+11. recursive fn, given int - 4 => 4+3+2+1...
 12. non repeating character in a string
 13. function currying
 14. let vs const vs var
@@ -39,7 +39,7 @@ React:
 8. Error handling for page render crash - error boundary and functional...
 9. data from parent to child - props, data from child to parent - ??? - callback - is this lifting state up?
 10. class components - lifecycle methods and equivalent hooks
-11. number -> 5431 -> 5+4+3+1 -> 13 -> 1+3
+11. number => 5431 => 5+4+3+1 => 13 => 1+3
 12. why is usestate needed
 13. how to set default props?
 14. mapstatetoprops, mapdispatchtoprops
