@@ -1,12 +1,10 @@
-How React works?
+REACT:
 
-- REACT: Javascript library for building user interface
-- React maintains a **light weight copy** of actual DOM in memory called **virtual DOM**.
-- When the application's state or props changes, new virtual DOM is created and compared with the old virtual DOM.
-- Then react updates only those parts of real DOM which are changed in the virtual DOM.
-- This comparions between old and new virtual DOM is done using something called **diffing algorithm**.
-- The process of comparing and updating the real DOM is called **Reconciliation**.
-- All this is done to **avoid re-rendering** a real DOM on every change as it is expensive computation.
+- Javascript library for building user interface.
+- React maintains a **lightweight copy** of the actual DOM in memory called the **virtual DOM**.
+- When state or props of UI components change, React creates a new virtual DOM and compares it with the old DOM using a **diffing algorithm** to identify changes.
+- Then react updates only the changed parts of the real DOM. This process of comparing and updating the real DOM based on these changes is called **reconciliation**.
+- This **minimizes re-rendering**. So when there are frequent DOM manipulations they happen in memory and only minimal updates are applied to the browser's actual DOM.
 - Latest version: v19.2 (Dec 2025)
 
 ---
@@ -45,12 +43,7 @@ CORE CONCEPTS:
 
 4. **Virtual DOM & Reconciliation:**
 
-   - A website works by DOM manipulations and if there are frequent updates to the UI, then web application can become slow or inefficient. Performance is affected.
-   - So React stores a copy of the DOM elements in the memory known as virtual DOM.
-   - So whenever any change happens in the UI, React creates a new copy of the virtual DOM.
-   - Then it compares the new virtual DOM with the old one to find out what changes happened. This is called as diffing.
-   - All this process happens in the memory, nothing is yet painted on the browser screen.
-   - Then it makes the changes of only updated UI nodes in the real DOM with minimum possible steps. This process is reconciliation.
+   - React uses a virtual DOM to compare changes in memory and updates only the necessary parts of the real DOM through reconciliation, minimizing re-renders and improving performance.
 
 5. **Webpack bundler:**
 
