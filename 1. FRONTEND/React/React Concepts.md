@@ -7,7 +7,7 @@ How React works?
 - This comparions between old and new virtual DOM is done using something called **diffing algorithm**.
 - The process of comparing and updating the real DOM is called **Reconciliation**.
 - All this is done to **avoid re-rendering** a real DOM on every change as it is expensive computation.
-- Latest version: v19.1 (July 2025)
+- Latest version: v19.2 (Dec 2025)
 
 ---
 
