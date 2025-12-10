@@ -1,9 +1,25 @@
 PERSONAL INTERVIEW:
-• Before Job application: Preparation of Resume
 
-• Before going to the interview
-• During the interview
-• After the interview
+Before Job Application:
+
+- Preparation of resume
+
+---
+
+Before interview:
+
+- JD check
+- Company information: its vision, its domains, its branches, key people, bit of history, today's position etc.
+
+---
+
+During interview:
+
+---
+
+After interview:
+
+---
 
 Before interview:
 
@@ -48,13 +64,8 @@ Before interview:
 ---
 
 - Technical interview: Subject knowledge
-
----
-
+- HR interview: Thought process
 - General awareness’s questions: Current affairs
-
----
-
 - Puzzle type questions, situation based questions, tricky questions.
 
 ---

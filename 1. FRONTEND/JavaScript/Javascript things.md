@@ -1,19 +1,54 @@
-JAVASCRIPT:
+HOISTING:
 
-- What are default parameters in a javascript function?
-- Finding out which elements from one array belong to other array using some object property => Running loop over two arrays - No, Use filter and some
+- It is a mechanism in which javascript moves all the function and variable declarations at the top of the scope before executing them.
+- If a variable is declared inside a function, its scope is limited to that function which means it cannot be accessed outside that function. If it is outside then it has global scope, it can be accessed anywhere.
+- var is function scoped, let and const are block scoped.
+- It doesnt work with let and const. It will give error that this is initialized before being declared.
+
+```javascript
+hoist();
+
+function hoist() {
+  console.log("In hoist");
+  console.log(x);
+  var x = 2;
+}
+
+console.log(y);
+var y = 5;
+
+function hoist2() {
+  console.log(a);
+  var a = "Hello";
+}
+
+hoist2();
+```
 
 ---
 
 CLOSURE:
 
-**Function nesting** is when a function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed out.
+- **Function nesting** is when a function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed out.
+- A **closure** is a function that retains access to variables from its **lexical scope** , even after the outer function has finished executing.
 
-A **closure** is a function that retains access to variables from its **lexical scope** , even after the outer function has finished executing.
+```javascript
+function outer() {
+  var x = 2;
+  function inner() {
+    console.log(x);
+  }
+  inner();
+}
+
+outer();
+```
 
 ---
 
 https://playcode.io/ - Javascript playground
+
+https://www.freecodecamp.org/news/learn-typescript-beginners-guide/
 
 Instead of many if else: use
 i.Ternary Operators
@@ -22,25 +57,31 @@ iii.Logical Operators (&& and ||)
 iv.Lookup Maps
 
 Lookup maps/lookup object: Eg:
+
+```javascript
 function checkBestStudent(subject) {
-var bestStudent = "";
-var lookup = {
-"maths": "Adams Milner",
-"english": "Akande Olalekan Toheeb",
-"chemistry": "Chicago",
-"physics": "Denver",
-"biology": "Easy"
-};
-bestStudent = lookup[subject];
-console.log(bestStudent);
+  var bestStudent = "";
+
+  var lookup = {
+    maths: "Adams Milner",
+    english: "Akande Olalekan Toheeb",
+    chemistry: "Chicago",
+    physics: "Denver",
+    biology: "Easy",
+  };
+
+  bestStudent = lookup[subject];
+  console.log(bestStudent);
 }
 
 checkBestStudent("maths");
+```
 
 ---
 
 - Implement a loop counter to avoid getting stuck into infinite loop. On exceeding a count number, take an action to break and come out of loop.
 - Store all the strings in a constants file and use constants wherever required.
+- Finding out which elements from one array belong to other array using some object property => Running loop over two arrays - No, Use filter and some
 
 ---
 

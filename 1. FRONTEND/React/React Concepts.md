@@ -14,7 +14,7 @@ FEATURES:
 - Virtual DOM
 - JSX - It stands for Javascript XML is a HTML like syntax which can be used to do javascript programming.
 - Reusable components
-- Data flow: It has one way data flow which is from parent componet to child components via props
+- Data flow: It has one way data flow which is from parent componet to child components via props. Passing data between components - lifting state up and prop drilling
 - Hooks: React hooks is another major functionality
 - Server components: It provides some server components and can be used for serverside rendering.
 - Serverside rendering: It's a process in which the page renders on the server and the HTML code is sent to the client. It decreases the loading time of the page.
@@ -74,6 +74,13 @@ COMPONENTS:
 - Class components use a constructor and this keyword and access props using this.props.
 - Also class components are outdated now. The new react documentation does not mention them. They are only used in legacy codebases now.
 
+**HOC:**
+
+- It is a way to enhance a component.
+- So its a function which takes a component as an input and gives enhanced component as its output, without modifying or changing the original component.
+- It does not modify the original component.HOC is a pure function.
+- The argument is typically called WrappedComponent because it refers to the component that is being "wrapped" by the Higher-Order Component (HOC).
+
 ---
 
 REACT 19:
@@ -83,6 +90,19 @@ REACT 19:
 3. Its own web components and better efficient asset loading in background
 4. useAPI
 5. New hooks
+
+---
+
+```javascript
+// rest in function signature in argument
+const MyComponent = ({ name, ...props }) => {
+  return <div {...props}>{name}</div>; // Spread the received props onto the div
+};
+```
+
+- using rest in the argument and spread inside the component
+- used for generic components where any number of props are required
+- prop types & default props
 
 ---
 
@@ -102,40 +122,5 @@ BOILERPLATE TEMPLATES:
 - Testing - @testing-library/react and jest
 - Building - npm run build - dist or build folder
 - Deployment - manual upload folder or deploy from a git repo
-
----
-
-REACT:
-
-1. How to create a custom hook?
-2. How to create a reusable UI component, maybe from a UI library?
-3. How to create datatable component and reuse it for list api?
-4. Common react situation; UI renders before API response in arrived.
-5. React project - colour constants and string constants for entire project
-6. Testing react application - Test on all browsers and mobile
-7. Passing data between components - lifting state up and prop drilling (add prop drilling in notes)
-8. how are unsused things shown in yellow with prettier
-9. how to configure eslint?
-10. How build tools, npm libraries work?
-11. public folder in repo - content is available in browser source tab
-12. How to create, publish and use my own npm package?
-13. What is difference between package.json and package-lock.json?
-14. How does react or angular use node js behind the scenes?
-15. How does node modules fit in production code?
-16. What is a bundler? ESBuild, webpack etc
-17. What are build tools and build systems?
-
----
-
-```javascript
-// rest in function signature in argument
-const MyComponent = ({ name, ...props }) => {
-  return <div {...props}>{name}</div>; // Spread the received props onto the div
-};
-```
-
-- using rest in the argument and spread inside the component
-- used for generic components where any number of props are required
-- prop types & default props
 
 ---
