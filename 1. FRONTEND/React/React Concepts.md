@@ -86,25 +86,6 @@ REACT 19:
 
 ---
 
-NEXT JS:
-
-- Next JS is a **react based full stack framework** developed by **Vercel** used to build **modern scalable applications**.
-- It has lot of **powerful features** and sometimes better than React in terms of performance, it has built-in routing, server-side rendering and API handling.
-- Supports **hybrid rendering** like **SSR, SSG**, and **ISR** for flexibility.
-- Uses the **App Router** with **file-based routing** for **simple navigation**.
-- Enables **Server Components** to improve performance and reduce bundle size.
-- Provides **built-in API Routes** to create backend endpoints easily.
-- Provides **font and image optimization** through built in components.
-- Includes **automatic code splitting** for faster page loads.
-- **Middleware** – Run logic before page load (auth, redirects).
-- Current version - (Dec 2025) Nextjs 15
-
----
-
-SSR (Server Side Rendering): getServerSideProps
-
-SSG (Static Site Generation): getStaticProps
-
 REDUX: mapStateToProps, mapDispatchToProps
 
 ---
@@ -121,5 +102,40 @@ BOILERPLATE TEMPLATES:
 - Testing - @testing-library/react and jest
 - Building - npm run build - dist or build folder
 - Deployment - manual upload folder or deploy from a git repo
+
+---
+
+REACT:
+
+1. How to create a custom hook?
+2. How to create a reusable UI component, maybe from a UI library?
+3. How to create datatable component and reuse it for list api?
+4. Common react situation; UI renders before API response in arrived.
+5. React project - colour constants and string constants for entire project
+6. Testing react application - Test on all browsers and mobile
+7. Passing data between components - lifting state up and prop drilling (add prop drilling in notes)
+8. how are unsused things shown in yellow with prettier
+9. how to configure eslint?
+10. How build tools, npm libraries work?
+11. public folder in repo - content is available in browser source tab
+12. How to create, publish and use my own npm package?
+13. What is difference between package.json and package-lock.json?
+14. How does react or angular use node js behind the scenes?
+15. How does node modules fit in production code?
+16. What is a bundler? ESBuild, webpack etc
+17. What are build tools and build systems?
+
+---
+
+```javascript
+// rest in function signature in argument
+const MyComponent = ({ name, ...props }) => {
+  return <div {...props}>{name}</div>; // Spread the received props onto the div
+};
+```
+
+- using rest in the argument and spread inside the component
+- used for generic components where any number of props are required
+- prop types & default props
 
 ---

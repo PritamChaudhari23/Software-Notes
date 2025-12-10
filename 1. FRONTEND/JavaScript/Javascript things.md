@@ -1,3 +1,18 @@
+JAVASCRIPT:
+
+- What are default parameters in a javascript function?
+- Finding out which elements from one array belong to other array using some object property => Running loop over two arrays - No, Use filter and some
+
+---
+
+CLOSURE:
+
+**Function nesting** is when a function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed out.
+
+A **closure** is a function that retains access to variables from its **lexical scope** , even after the outer function has finished executing.
+
+---
+
 https://playcode.io/ - Javascript playground
 
 Instead of many if else: use

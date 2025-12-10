@@ -40,6 +40,8 @@ Practice in stackblitz before interview:
 
 DEMO CODE: Interviewer shows a code and asks
 
+- Interview question types - 1.Given code snippet - Find error, 2.Given code snippet - find output
+- Frequently asked javascript and react code interview questions - Type: Spot error, tell output - check with chatgpt
 - Understand the program and explain the functional outcome of this program
 - Finish this code
 - Fix error

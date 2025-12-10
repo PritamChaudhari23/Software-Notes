@@ -1,4 +1,17 @@
-NEXT JS: It is a react framework for building full stack web applications.
+NEXT JS:
+
+- Next JS is a **react based full stack framework** developed by **Vercel** used to build **modern scalable applications**.
+- It has lot of **powerful features** and sometimes better than React in terms of performance, it has built-in routing, server-side rendering and API handling.
+- Supports **hybrid rendering** like **SSR, SSG**, and **ISR** for flexibility.
+- Uses the **App Router** with **file-based routing** for **simple navigation**.
+- Enables **Server Components** to improve performance and reduce bundle size.
+- Provides **built-in API Routes** to create backend endpoints easily.
+- Provides **font and image optimization** through built in components.
+- Includes **automatic code splitting** for faster page loads.
+- **Middleware** – Run logic before page load (auth, redirects).
+- Current version - (Dec 2025) Nextjs 15
+
+---
 
 FEATURES:
 
@@ -31,6 +44,10 @@ Data fetching
 - ISG - Incremental Static Generation
 - By moving rendering and data fetching to the server, you can reduce the amount of code sent to the client, which can improve your application's performance.
 - Automatic code splitting
+
+SSR (Server Side Rendering): getServerSideProps
+
+SSG (Static Site Generation): getStaticProps
 
 ---
 
