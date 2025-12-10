@@ -111,10 +111,4 @@ So Nitor is my first company. I joined here in December 2019 through CDAC campus
 - The ability to read, understand and implement by referring to a documentation.
 - Mobile application development - Billions of users use mobile applications. More market than the desktop or web application which we develop.
 
-MBA:
-
-- 6 month / 8 month / 1 year post graduate diploma MBA course. Good institutions across world providing distance learning.
-- Thia MBA is not to change careers but to aid in existing career.
-- Not traditional 2 year full time college courses.
-
 ---
