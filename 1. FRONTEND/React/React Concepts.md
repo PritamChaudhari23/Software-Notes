@@ -14,7 +14,7 @@ FEATURES:
 - Virtual DOM
 - JSX - It stands for Javascript XML is a HTML like syntax which can be used to do javascript programming.
 - Reusable components
-- Data flow: It has one way data flow which is from parent componet to child components via props. Passing data between components - lifting state up and prop drilling
+- Data flow: It has one way data flow which is from parent component to child components via props. Passing data between components - lifting state up and prop drilling
 - Hooks: React hooks is another major functionality
 - Server components: It provides some server components and can be used for serverside rendering.
 - Serverside rendering: It's a process in which the page renders on the server and the HTML code is sent to the client. It decreases the loading time of the page.

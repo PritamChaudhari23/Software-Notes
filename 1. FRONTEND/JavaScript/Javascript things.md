@@ -46,9 +46,8 @@ outer();
 
 ---
 
-https://playcode.io/ - Javascript playground
-
-https://www.freecodecamp.org/news/learn-typescript-beginners-guide/
+- Javascript playground: https://playcode.io/
+- Typescript: https://www.freecodecamp.org/news/learn-typescript-beginners-guide/
 
 Instead of many if else: use
 i.Ternary Operators
