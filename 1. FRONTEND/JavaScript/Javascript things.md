@@ -206,6 +206,7 @@ Modelling - we need to define datatype explicitly in typescript. Javascript infe
 - Create datatypes using interfaces in types folder
   Creating type interfaces will give type safety.
   Type safety means the is no need to use generics datatype like Object or any or base datatype` but specific datatype eg: Customer object
+- Entity: Business object. It's what we see in UI, what we send through API and store in DB. Entities are related to each other. Hence ER diagrams. Eg: Social media app: Post, Comment, User etc., Ecommerce app: Product, Cart, Orders, User etc.
 
 ---
 
