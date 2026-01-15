@@ -9,6 +9,53 @@ SUDO
    - sudo yum update: update all available packages
    - sudo yum install xyz: install xyz software package
 
+File editing:
+
+Nano Commands:
+
+* `nano file.txt`: open a file
+* `Ctrl + O`: save file
+* `Ctrl + X`: exit nano
+* `Ctrl + K`: cut current line
+* `Ctrl + U`: paste (uncut) line
+* `Ctrl + W`: search text
+* `Ctrl + \`: search and replace
+* `Ctrl + G`: help
+* `Ctrl + A`: move to start of line
+* `Ctrl + E`: move to end of line
+* `Ctrl + V`: page down
+* `Ctrl + Y`: page up
+* `Alt + U`: undo
+* `Alt + E`: redo
+* `Alt + #`: toggle line numbers
+* `Alt + A`: mark (select) text
+
+Vim Commands:
+
+* `vim file.txt`: open a file
+* `i`: insert mode
+* `Esc`: return to normal mode
+* `:w`: save file
+* `:q`: quit
+* `:wq`: save and quit
+* `:q!`: quit without saving
+* `h j k l`: move cursor
+* `0`: start of line
+* `$`: end of line
+* `gg`: top of file
+* `G`: bottom of file
+* `x`: delete character
+* `dd`: delete line
+* `yy`: copy (yank) line
+* `p`: paste
+* `u`: undo
+* `Ctrl + r`: redo
+* `/text`: search forward
+* `n`: next search result
+* `:%s/old/new/g`: replace all
+* `v`: visual (select) mode
+* `:set number`: show line numbers
+
 ---
 
 SHELL SCRIPTING:
