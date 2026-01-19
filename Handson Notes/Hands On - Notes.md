@@ -1,5 +1,3 @@
-Session time: 90 min
-
 SUDO
 
 1. sudo apt: APT - Advanced Package Tool. Used for Debian based Linux distributions such as Ubuntu, Linux mint, Kali linux, MX linux.
@@ -55,49 +53,6 @@ Vim Commands:
 * `:%s/old/new/g`: replace all
 * `v`: visual (select) mode
 * `:set number`: show line numbers
-
----
-
-SHELL SCRIPTING:
-
----
-
-DOCKER:
-
-Dockerfile:
-
----
-
-KUBERNETES:
-
----
-
-JENKINS:
-
-Jenkinsfile:
-
----
-
-AWS:
-AWS CLI
-AWS SDK
-EC2
-Serverless
-AWS Lambda
-
----
-
-AZURE:
-Azure portal
-Azure CLI
-
----
-
-FLUTTER:
-
----
-
-MERN:
 
 ---
 
