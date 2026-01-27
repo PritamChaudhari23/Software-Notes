@@ -2,11 +2,11 @@ Session time: 90 min
 
 SHELL SCRIPTING
 
-1]
+1] Create a basic shell script, make it executable and run it
 
-2]
+2] Take pull of a repo and install deps. Run script from package.json
 
-3]
+3] File search, creation, edit and delete
 
 4]
 
@@ -106,6 +106,7 @@ AWS
 7] AWS S3
 
 * Deploy a react website to AWS S3
+* Upload a file to S3 via code
 
 ---
 

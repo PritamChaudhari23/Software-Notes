@@ -1,3 +1,7 @@
+Deployment:
+Remote access to a server machine - NoMachine, AnyDesk
+Secure file transfer from my machine to remote server machine - WinSCP, FileZilla
+
 SUDO
 
 1. sudo apt: APT - Advanced Package Tool. Used for Debian based Linux distributions such as Ubuntu, Linux mint, Kali linux, MX linux.
