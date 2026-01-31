@@ -6,11 +6,9 @@ SHELL SCRIPTING
 
 2] Take pull of a repo and install deps. Run script from package.json
 
-3] File search, creation, edit and delete
+3] Deploy an app on a remote server
 
-4]
-
-5]
+4] File search, creation, edit and delete
 
 ---
 
