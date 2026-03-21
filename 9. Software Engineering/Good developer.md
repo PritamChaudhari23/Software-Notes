@@ -96,14 +96,12 @@ WORK & TIME MANAGEMENT:
 - Learning
 - Other (Project, practice, preparation etc) - Can plan on only weekends or holidays as well
 
-SIDE TASKS: Non Coding work
-
 PAIN POINTS/CHALLENGES:
 
 - Difficulty estimating tasks accurately
 - Frequent side tasks interrupting focus (major issue)
 - Excessive meetings reducing productive time
-- Time-consuming JIRA board activities; administrative work outweighing coding
+- Time-consuming JIRA board activities; non coding work outweighing coding
 - Feeling sleepy, lazy, and lethargic during work
 - Difficulty paying attention in meetings
 - Mental fog at times; struggling to understand things clearly
