@@ -90,3 +90,13 @@ Builders - Used to do repetitive, low-value work.
 No code => Low code => Full code
 
 CMS: Static content - Hosted on CDN
+
+---
+
+Learn to use tools:
+
+1. DBeaver
+2. WinSCP (Uses port 22 to run SFTP protocol)
+3. NoMachine client (Uses port 4000 to run NX protocol)
+
+Add - ways to access a vm from your system. You need - 1. VM IP, 2. VM Username, 3. VM Password
