@@ -99,4 +99,4 @@ Learn to use tools:
 2. WinSCP (Uses port 22 to run SFTP protocol)
 3. NoMachine client (Uses port 4000 to run NX protocol)
 
-Add - ways to access a vm from your system. You need - 1. VM IP, 2. VM Username, 3. VM Password
+Add - ways to access a vm from your system. You need - 1. VM IP, 2. VM Username, 3. VM Password. Also port number on which application is running. For DBeaver and NoMachine/WinSCP connection.
