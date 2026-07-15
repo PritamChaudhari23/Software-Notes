@@ -78,10 +78,26 @@ CMS: Static content - Hosted on CDN
 
 ---
 
-Learn to use tools:
+Tools to interact with remote VM: (Add a section in lab handson - VM)
 
 1. DBeaver
 2. WinSCP (Uses port 22 to run SFTP protocol)
 3. NoMachine client (Uses port 4000 to run NX protocol)
+4. Termius - CLI based SSH client for connecting to VM
+5. Filezilla - search in all repo and remove where not required.
 
 Add - ways to access a vm from your system. You need - 1. VM IP, 2. VM Username, 3. VM Password. Also port number on which application is running. For DBeaver and NoMachine/WinSCP connection.
+
+---
+
+How to make github copilot in vs code access bitbucket PR and JIRA?
+
+How to connect various plugins to llms?
+
+---
+
+AWS Serverless: Prepare for interviews! And make section in lab notes
+
+Typical setup:
+
+Client => API Gateway => Lambda function => DynamoDB. Auth using Cognito, Storage in S3, Domain with Route53
