@@ -1,31 +1,3 @@
-Use case:
-
-If mostly content - need a website - use website builder
-
-If mostly logic - need a product - use front-end development frameworks (Angular, React, etc.)
-
-Notes:
-
-Builders - Used to do repetitive, low-value work.
-
-No code => Low code => Full code
-
-CMS: Static content - Hosted on CDN
-
----
-
-Tools to interact with remote VM: (Add a section in lab handson - VM)
-
-1. DBeaver
-2. WinSCP (Uses port 22 to run SFTP protocol)
-3. NoMachine client (Uses port 4000 to run NX protocol)
-4. Termius - CLI based SSH client for connecting to VM
-5. Filezilla - search in all repo and remove where not required.
-
-Add - ways to access a vm from your system. You need - 1. VM IP, 2. VM Username, 3. VM Password. Also port number on which application is running. For DBeaver and NoMachine/WinSCP connection.
-
----
-
 How to make github copilot in vs code access bitbucket PR and JIRA?
 
 How to connect various plugins to llms?
