@@ -1,66 +1,18 @@
-Tools, Platform, AI
+TOOLS, PLATFORMS:
 
-Graphic Design: Canva
-
-UI/UX Design: Figma
-
-E-commerce: Shopify, Magento
-
-ERP: SAP, Odoo
-
-CRM: Salesforce
-
-CMS: WordPress, Joomla, Drupal, DNN
-
-Website builder: Wix
-
-Hosting/ infrastructure: Hostinger, GoDaddy, Cloudflare
-
-Stock images: Unsplash, Getty images, Pexels, Pixabay, Shutter stock, freepik, iStock
-
-HRMS & Payroll softwares
-
-Office productivity suite - Google Workspace, Microsoft 365, LibreOffice, Apple iWork, WPS, Zoho
-
-Project management: JIRA
-
-Note-taking: Notion, Evernote, Obsidian
-
-Notes analysis: Turbo AI
-
-TOOLS:
-
-Website builder
-
-E-commerce platforms
-
-Business platforms/ ERP
-
-CMS
-
-CRM
-
-Hosting/infrastructure
-
-Automation & Integration
-
-App builder
-
-Digital skills:
-
-UI/ UX, Web design
-
-Graphic design
-
-Digital marketing
-
-Video editing
-
-Data & automation
-
-Copywriting & Content writing
-
-AI influencer
+1. Graphic Design: Canva
+2. UI/UX Design: Figma
+3. E-commerce: Shopify, Magento
+4. ERP: SAP, Odoo
+5. CRM: Salesforce
+6. CMS: WordPress, Joomla, Drupal, DNN
+7. Website builder: Wix
+8. Hosting/ infrastructure: Hostinger, GoDaddy, Cloudflare
+9. Stock images: Unsplash, Getty images, Pexels, Pixabay, Shutter stock, freepik, iStock
+10. HRMS & Payroll softwares
+11. Office productivity suite - Google Workspace, Microsoft 365, LibreOffice, Apple iWork, WPS, Zoho
+12. Project management: JIRA
+13. Note-taking: Notion, Evernote, Obsidian
 
 Use case:
 
