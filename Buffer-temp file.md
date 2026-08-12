@@ -1,19 +1,3 @@
-TOOLS, PLATFORMS:
-
-1. Graphic Design: Canva
-2. UI/UX Design: Figma
-3. E-commerce: Shopify, Magento
-4. ERP: SAP, Odoo
-5. CRM: Salesforce
-6. CMS: WordPress, Joomla, Drupal, DNN
-7. Website builder: Wix
-8. Hosting/ infrastructure: Hostinger, GoDaddy, Cloudflare
-9. Stock images: Unsplash, Getty images, Pexels, Pixabay, Shutter stock, freepik, iStock
-10. HRMS & Payroll softwares
-11. Office productivity suite - Google Workspace, Microsoft 365, LibreOffice, Apple iWork, WPS, Zoho
-12. Project management: JIRA
-13. Note-taking: Notion, Evernote, Obsidian
-
 Use case:
 
 If mostly content - need a website - use website builder
