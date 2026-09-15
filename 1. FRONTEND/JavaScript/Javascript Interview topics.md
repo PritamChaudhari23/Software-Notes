@@ -143,15 +143,58 @@ const p = new Person("Adam", 25);
 
 ---
 
-**this**
+**this:**
 
 - this is a keyword which gives reference to the object which is currently used in the function's execution context.
 - It depends on how the function is called not just where its defined.
+- call, bind and apply are use to set the value of this.
 
-**call**
+**call:**
 
-**bind**
+- takes comma separated arguments
+- sets the value of this and executes immediately
 
-**apply**
+**apply:**
+
+- takes array of arguments
+- sets the value of this and executes immediately
+
+**bind:**
+
+- takes comma separated arguments
+- sets the value of this and returns a function to execute later
+
+Example:
+
+```JavaScript
+function greet(place, occasion) {
+  console.log(`Hello ${this.name}, welcome to ${place} for the ${occasion}`);
+}
+
+const user = {
+  name: "Adam",
+  sayHi: function () {
+    console.log(`Hi, I am ${this.name}`);
+  }
+};
+
+user.sayHi(); // Hi, I am Adam → this = user
+
+// call → arguments passed individually + executes immediately
+greet.call(user, "Pune", "Tech Summit");
+
+// apply → arguments passed as an array + executes immediately
+greet.apply(user, ["Mumbai", "Product Launch"]);
+
+// bind → arguments passed individually + returns a new function
+const boundGreet = greet.bind(user, "Delhi", "Annual Conference");
+
+boundGreet(); // executes later
+```
+
+Question: Why this does not work with arrow functions?
+
+- Normal functions get the value of this from where the function gets called.
+- Arrow functions do not have their own this, they inherit it from surrounding scope, as in where the function is defined.
 
 ---
