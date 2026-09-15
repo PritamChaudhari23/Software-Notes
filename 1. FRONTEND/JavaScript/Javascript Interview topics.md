@@ -1,44 +1,157 @@
-1. prototypes
-2. call, bind, apply
-3. closure
-4. hoisting
-5. promises, async await
-6. js engine, event loop
+**REFERENCES**:
+
+- In C or C++, pointers are used to show memory location of data. But in JavaScript, we cannot see the exact memory location of objects, arrays or primitives. This is because JavScript is a high level programming language and memory management is abstracted away from user.
+- When we use = sign, we basically give a new name for array or object.
+
+Example:
+
+1. Object:
+
+```JavaScript
+// Object
+const obj1 = { name: "Adam" };
+const obj2 = obj1;
+
+console.log(obj1 === obj2); // true → same reference
+obj2.name = "Noah";
+console.log(obj1.name);     // "Noah" → proves same underlying object
+```
+
+2. Array:
+
+```JavaScript
+const arr1 = [1, 2, 3];
+const arr2 = arr1;
+
+arr2.push(4);
+
+console.log(arr1); // [1, 2, 3, 4]
+console.log(arr2); // [1, 2, 3, 4]
+console.log(arr1 === arr2); // true
+```
+
+- We can prove the sameness with **reference equality** (`===`) and by observing **shared mutations**.
+- But the referential equality applies to arrays and objects only, not primitives. For primitive data types, new copy gets created.
+- Primitives are copied by value, objects are copied by reference.
+
+Example:
+
+```JavaScript
+let x = 10;
+let y = x; // copy, not reference
+y = 20;
+
+console.log(x); // 10
+console.log(y); // 20
+```
 
 ---
 
-Prototypes:
+**PROTOTYPES**:
+
+Key points:
+
+- In JavaScript everything apart from primitive datatypes - object, array and even function is an object.
+- Objects can be created using { } but then they cannot share logic. Functions which are created without new don't create any object.
+- Objects can be created by constructor functions using new.
 
 Q1. Explain prototypes in JavaScript?
 
-- Prototype is a mechanism in javascript by which multiple objects can reuse shared logic or behaviour.
-- So there is a prototype object which exists on a function and we can add different methods and properties on it.
-- And when we create the objects with new, then we can use those methods and properties.
-- Modern class syntax in Javascript actually uses this prototype under the hood.
-- And thats how inheritance works
+- Prototype is a mechanism in javascript by which multiple objects can reuse shared logic and they can also inherit features from other objects.
+- When we create an object using a constructor function with new, that object gets a link to the constructor's prototype object.
+- We can add different methods and properties on the prototype.
 
 Q2. Can you give a code example?
 
-function Person(name) {
-this.name = name;
+```JavaScript
+function Person(name,age) {
+  this.name = name;
+  this.age = age;
 }
 
-Person.prototype.sayHi = function() {
-console.log("Hi " + this.name);
-};
+Person.prototype.greetUser = function () {
+  console.log(`Welcome ${this.name}`)
+}
 
-const p1 = new Person("Pritam");
-const p2 = new Person("Neha");
+const p1 = new Person('Adam', 25);
+const p2 = new Person('Noah', 15);
 
-p1.sayHi();
-p2.sayHi();
+p1.greetUser();
+p2.greetUser();
+```
 
-Q3. Whats the difference between .prototype and a***proto***?
+Q3. Whats the difference between .prototype and \_ _ proto _ \_?
+
+- prototype is a property which exists on constructor function.
+- \_ _ proto _ \_ is a property which exists on new object which is created.
+
+Example:
+
+```JavaScript
+console.log(Person.prototype === p1.__proto__) // true
+```
 
 Q4. How inheritance works in JavaScript using prototype?
 
+```JavaScript
+function Animal(name, color) {
+  this.name = name;
+  this.color = color;
+}
+
+Animal.prototype.eat = function () {
+  console.log(`${this.name} is eating`);
+};
+
+
+function Horse(name, color) {
+  Animal.call(this, name, color);
+}
+
+Horse.prototype = Object.create(Animal.prototype);
+
+Horse.prototype.run = function () {
+  console.log(`${this.name} is running`);
+};
+
+
+const horse1 = new Horse("Thunder", "Brown");
+
+console.log(horse1.name);  // Thunder
+console.log(horse1.color); // Brown
+
+horse1.eat(); // Thunder is eating
+horse1.run(); // Thunder is running
+```
+
 Q5. How is class syntax using prototype behind the scenes?
+
+```JavaScript
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greetUser() {
+    console.log(`Welcome ${this.name}`);
+  }
+}
+
+const p = new Person("Adam", 25);
+```
 
 ---
 
-call, bind, apply, this:
+**this**
+
+- this is a keyword which gives reference to the object which is currently used in the function's execution context.
+- It depends on how the function is called not just where its defined.
+
+**call**
+
+**bind**
+
+**apply**
+
+---
