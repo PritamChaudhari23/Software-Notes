@@ -1,3 +1,18 @@
+**TYPESCRIPT:**
+
+- **TypeScript** is an **open-source programming language** developed by **Microsoft** and its **superset of JavaScript**.
+- It offers **static typing**, so we explicitly declare data type which helps catch errors **before running the code**.
+- **Type inference** helps automatically determine data type if not declared.
+- **Interfaces** & **Type alias** helps to define the structure of objects and ensure consistency.
+- **Object-Oriented Programming Support**: Classes, inheritance, access modifiers (public, private, protected), abstract classes.
+- **Compile-Time Error Checking,** not at runtime.
+- Modern JavaScript Support (ES6+) and excellent tooling and IDE support, Intellisense.
+- It is compiled into **(transpiled)** into plain JavaScript using typescript compiler which browsers and JavaScript engines understand.
+- TypeScript configuration of a project is stored in tsconfig.json file. Compilation: .ts (TypeScript file) => tsc (tsc compiler) => .js (JavaScript file)
+- Current version: v5.9 (Dec 2025)
+
+---
+
 **REFERENCES**:
 
 - In C or C++, pointers are used to show memory location of data. But in JavaScript, we cannot see the exact memory location of objects, arrays or primitives. This is because JavScript is a high level programming language and memory management is abstracted away from user.
@@ -44,6 +59,62 @@ y = 20;
 console.log(x); // 10
 console.log(y); // 20
 ```
+
+---
+
+**this:**
+
+- this is a keyword which gives reference to the object which is currently used in the function's execution context.
+- It depends on how the function is called not just where its defined.
+- call, bind and apply are use to set the value of this.
+
+**call:**
+
+- takes comma separated arguments
+- sets the value of this and executes immediately
+
+**apply:**
+
+- takes array of arguments
+- sets the value of this and executes immediately
+
+**bind:**
+
+- takes comma separated arguments
+- sets the value of this and returns a function to execute later
+
+Example:
+
+```JavaScript
+function greet(place, occasion) {
+  console.log(`Hello ${this.name}, welcome to ${place} for the ${occasion}`);
+}
+
+const user = {
+  name: "Adam",
+  sayHi: function () {
+    console.log(`Hi, I am ${this.name}`);
+  }
+};
+
+user.sayHi(); // Hi, I am Adam → this = user
+
+// call → arguments passed individually + executes immediately
+greet.call(user, "Pune", "Tech Summit");
+
+// apply → arguments passed as an array + executes immediately
+greet.apply(user, ["Mumbai", "Product Launch"]);
+
+// bind → arguments passed individually + returns a new function
+const boundGreet = greet.bind(user, "Delhi", "Annual Conference");
+
+boundGreet(); // executes later
+```
+
+Question: Why this does not work with arrow functions?
+
+- Normal functions get the value of this from where the function gets called.
+- Arrow functions do not have their own this, they inherit it from surrounding scope, as in where the function is defined.
 
 ---
 
@@ -143,58 +214,50 @@ const p = new Person("Adam", 25);
 
 ---
 
-**this:**
+**HOISTING:**
 
-- this is a keyword which gives reference to the object which is currently used in the function's execution context.
-- It depends on how the function is called not just where its defined.
-- call, bind and apply are use to set the value of this.
+- Hoisting is a JavaScript behavior where declarations of variables and functions are processed before code execution. During the memory allocation (creation phase), JavaScript allocates memory for variables and functions before executing the code.
+- If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. If it is outside, then it has a global scope; it can be accessed anywhere.
+- var is function scoped, let and const are block scoped.
+- Only declarations are hoisted, not initializations.
+- var variables are hoisted and initialized with undefined.
+- let and const variables are hoisted but not initialized.
+- Hoisting does work with let and const, but they are placed in the Temporal Dead Zone (TDZ). The Temporal Dead Zone (TDZ) is the time between the start of a scope and the declaration of a let or const variable, during which accessing it throws a ReferenceError. Accessing them before their declaration results in a ReferenceError (not undefined).
 
-**call:**
+```javascript
+1.var
+	console.log(a);
+	var a = 10;
+	Output: undefined
 
-- takes comma separated arguments
-- sets the value of this and executes immediately
+2.let/const
+	console.log(b);
+	let b = 20;
+	Output: ReferenceError: Cannot access 'b' before initialization
 
-**apply:**
+3.Function declaration hoisting
+	sayHello();
 
-- takes array of arguments
-- sets the value of this and executes immediately
+	function sayHello() {
+ 		console.log("Hello");
+	}
+	Output: Hello
 
-**bind:**
+4.Function expression with var
+	sayHi();
 
-- takes comma separated arguments
-- sets the value of this and returns a function to execute later
+	var sayHi = function () {
+ 		console.log("Hi");
+	};
+	Output: TypeError: sayHi is not a function
 
-Example:
+5.Block scope (let)
+	{
+ 		console.log(x);
+ 		let x = 5;
+	}
 
-```JavaScript
-function greet(place, occasion) {
-  console.log(`Hello ${this.name}, welcome to ${place} for the ${occasion}`);
-}
-
-const user = {
-  name: "Adam",
-  sayHi: function () {
-    console.log(`Hi, I am ${this.name}`);
-  }
-};
-
-user.sayHi(); // Hi, I am Adam → this = user
-
-// call → arguments passed individually + executes immediately
-greet.call(user, "Pune", "Tech Summit");
-
-// apply → arguments passed as an array + executes immediately
-greet.apply(user, ["Mumbai", "Product Launch"]);
-
-// bind → arguments passed individually + returns a new function
-const boundGreet = greet.bind(user, "Delhi", "Annual Conference");
-
-boundGreet(); // executes later
+	Output: ReferenceError
 ```
-
-Question: Why this does not work with arrow functions?
-
-- Normal functions get the value of this from where the function gets called.
-- Arrow functions do not have their own this, they inherit it from surrounding scope, as in where the function is defined.
 
 ---

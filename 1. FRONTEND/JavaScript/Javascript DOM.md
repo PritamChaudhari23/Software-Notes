@@ -64,20 +64,17 @@ EVENT HANDLING:
    Eg: element.addEventListner("click", (event) => {
    console.log('Event occured'),
    }, { capture:true })
-
 4. Stop event propogation:
    element.addEventListner(event, callback function) -
    Eg: element.addEventListner("click", (event) => {
    console.log('Event occured'),
    event.stopPropogation
    })
-
 5. Run event only once:
    element.addEventListner(event, callback function) -
    Eg: element.addEventListner("click", (event) => {
    console.log('Event occured'),
    }, { once:true })
-
 6. Event Delegation:
    element.addEventListner("click", (event) => {
    if(event.target.matches('div')) {
@@ -86,3 +83,23 @@ EVENT HANDLING:
    })
 
 ---
+
+jQuery:
+
+$(...).find() - No need to write $($(.....)) - It returns all the elements
+$(...).get()
+$(...).css()
+$(...).val()
+$(...).parent()
+$(...).children()
+$(...).next()
+$(...).prev()
+$(...).hasClass()
+$(...).closest()
+$(...).each()
+$(...).prop()
+$(...).on()
+$(...).data()
+$(...).closest() - use to find nearest ancestor with given selector query - useful instead of using $(...).parent().parent().parent().parent().parent()....
+$(...).closest(".myClass"); // by class
+$(...).closest('[href="#foo"]'); OR $(...).closest("li:has(\*[data-findme])") // by attribute
