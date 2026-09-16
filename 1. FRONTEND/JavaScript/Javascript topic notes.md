@@ -261,3 +261,51 @@ const p = new Person("Adam", 25);
 ```
 
 ---
+
+**CLOSURE:**
+
+- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
+- **Closure:** When the inner function is returned or used outside the outer function, allowing it to remember and access the outer function’s variables even after execution ends.
+
+Example:
+
+```JavaScript
+function outer() {
+  let count = 0; // variable in lexical scope
+
+  return function inner() {
+    count++; // inner remembers `count`
+    console.log(count);
+  };
+}
+
+const counter = outer(); // outer() has finished executing
+
+counter(); // 1
+counter(); // 2
+counter(); // 3
+```
+
+---
+
+**PROMISES, ASYNC/AWAIT:**
+
+- There should be either async/await with try/catch OR .then().catch()
+- Using both together is unnecessary even if technically not wrong.
+- then called on promise resolve, catch called on promise reject
+- Whatever is passed in resolve() - it is collected in then() method
+- Whatever is passed in reject() - it is collected in catch() method
+- await keyword in the async/ await function stops the function exceution until the code in front of await(eg: fetching data from api) is completed. Once we have the response data, the furthur code is executed.
+- .then() and .catch() - chain methods don't stop until the data from api is received. they continue the code after that and whenever the response is received, they will store or set the received data in variable
+- make a habit to write all the code in try catch blocks
+- make the await api call in the try block
+- Usually throw Error class object in a Promise reject
+- Promise.all, Promise.race????
+- Learn how to:
+  - Convert an async/await function into using .then().catch()
+  - Convert .then().catch() function into using async/await
+  - How to promisify a function
+
+---
+
+**MISCELLENEOUS:**

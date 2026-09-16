@@ -1,6 +1,6 @@
 Inside head tag of HTML:
-Import CSS - <link rel="stylesheet" href="report.css" />
-Import JS - <script src="./report.js"></script>
+Import CSS -
+Import JS -
 
 All operations done on document object - document.querySelector() etc
 Document is complete HTML of that web page
@@ -103,3 +103,7 @@ $(...).data()
 $(...).closest() - use to find nearest ancestor with given selector query - useful instead of using $(...).parent().parent().parent().parent().parent()....
 $(...).closest(".myClass"); // by class
 $(...).closest('[href="#foo"]'); OR $(...).closest("li:has(\*[data-findme])") // by attribute
+
+```
+
+```

@@ -1,51 +1,5 @@
-CLOSURE:
-
-- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
-- **Closure:** When the inner function is returned or used outside the outer function, allowing it to remember and access the outer function’s variables even after execution ends.
-
-```javascript
-function outer() {
-  let count = 0; // variable in lexical scope
-
-  return function inner() {
-    count++; // inner remembers `count`
-    console.log(count);
-  };
-}
-
-const counter = outer(); // outer() has finished executing
-
-counter(); // 1
-counter(); // 2
-counter(); // 3
-```
-
----
-
-PROMISES, ASYNC/AWAIT:
-
-- There should be either async/await with try/catch OR .then().catch()
-- Using both together is unnecessary even if technically not wrong.
-- then called on promise resolve, catch called on promise reject
-- Whatever is passed in resolve() - it is collected in then() method
-- Whatever is passed in reject() - it is collected in catch() method
-- await keyword in the async/ await function stops the function exceution until the code in front of await(eg: fetching data from api) is completed. Once we have the response data, the furthur code is executed.
-- .then() and .catch() - chain methods don't stop until the data from api is received. they continue the code after that and whenever the response is received, they will store or set the received data in variable
-- make a habit to write all the code in try catch blocks
-- make the await api call in the try block
-- Usually throw Error class object in a Promise reject
-- Promise.all, Promise.race????
-- Learn how to:
-  - Convert an async/await function into using .then().catch()
-  - Convert .then().catch() function into using async/await
-  - How to promisify a function
-
----
-
-- Javascript playground: https://playcode.io/
-- Typescript: https://www.freecodecamp.org/news/learn-typescript-beginners-guide/
-
 Instead of many if else: use
+
 i.Ternary Operators
 ii.Switch Statements
 iii.Logical Operators (&& and ||)
@@ -176,18 +130,6 @@ Null check: ?. - checks that something should not be null or undefined. used to 
 
 ---
 
-Query parameters:
-
-- Occurs in the url after the domain name. Starts with a ? and seperated key value pairs by &
-  Eg: localhost:3000?name=John&surname=Watson&age=25
-  query parameters - started in the url after ? and parameters are seperated by &
-  query parameters in above example are, name, surname and age
-
-Path parameters:
-
-- Occurs in the url path. Mentioned in curly braces in url path
-- Eg: getdata/{product}/{id}
-
 URL string functions:
 
 1. window.location.href - gives URL
@@ -196,12 +138,112 @@ URL string functions:
 
 ---
 
-Modelling - we need to define datatype explicitly in typescript. Javascript infers datatype automatically.
+Basic:
 
-- Create objects using Model class in models folder
-- Create datatypes using interfaces in types folder
-  Creating type interfaces will give type safety.
-  Type safety means the is no need to use generics datatype like Object or any or base datatype` but specific datatype eg: Customer object
-- Entity: Business object. It's what we see in UI, what we send through API and store in DB. Entities are related to each other. Hence ER diagrams. Eg: Social media app: Post, Comment, User etc., Ecommerce app: Product, Cart, Orders, User etc.
+1. Typescript vs Javascript
+2. == vs === (equality and type checking)
+3. Type coercion in javascript
+4. Type casting - converting an object of one datatype into another
+
+- parseInt(): string => integer
+- parseFloat(): string => float,
+- toString(): data => string
+- JSON.parse(): String => JSON
+- JSON.stringify(): JSON => string
+
+5. generic type, any, T
+6. null check in Javascript - ?.
+7. typeof operator
+8. delete operator
+9. Scope: Global scope, function scope, block scope
+
+---
+
+Data structures, collections:
+
+1. Javascript arrays
+
+- Indexed collections
+- Methods: push, pop, shift, unshift, filter, map, slice, splice
+- Iterations: for, forEach, for...in, for...of loops
+
+2. Javascript objects
+
+- Property accessors
+- Methods
+
+3. Javascript Strings - Template literals (Template strings)
+4. Javascript Collections: Maps, Sets
+5. Date object
+6. Math object
+
+---
+
+Advanced:
+
+1. async/await function
+2. Promises
+   (Promise.all - https://nextjs.org/learn/dashboard-app/fetching-data)
+3. setInterval, clearInterval, setTimeout, clearTimeout methods
+4. Classes and javascript OOPs concepts
+5. Import, Export & Modules in Javascript
+6. anonymous functions and IIFEs
+7. prototypal inheritance
+
+---
+
+ES6:
+
+1. Block scope: let, const, var
+2. Arrow functions
+3. Object/Array destructuring
+4. spread and rest operators
+5. this keyword, super keyword
+
+---
+
+DOM:
+
+1. HTML
+2. CSS
+3. jQuery, AJAX
+4. Bootstrap
+5. Document object
+6. DOM Traversal
+
+- document.querySelector
+- document.querySelectorAll
+- document.getElementById
+- document.getElementByTagName
+
+7. DOM Manipulation
+8. DOM - Event handling
+
+- addEventListner
+- event.target.name
+- event.target.value
+- event.preventDefault
+- event.stopPropogation
+
+---
+
+Testing & Debugging:
+
+- print stack trace
+
+---
+
+Browser environment:
+
+- localStorage and sessionStorage
+- CORS
+- event loop
+
+---
+
+JAVASCRIPT LIBRARIES:
+
+- moments
+- lodash
 
 ---
