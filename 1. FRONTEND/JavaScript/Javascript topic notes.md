@@ -266,6 +266,7 @@ const p = new Person("Adam", 25);
 
 - **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
 - **Closure:** When the inner function is returned or used outside the outer function, allowing it to remember and access the outer function’s variables even after execution ends.
+- Scope: Global scope, function scope, block scope
 
 Example:
 
@@ -309,3 +310,14 @@ counter(); // 3
 ---
 
 **MISCELLENEOUS:**
+
+ARRAY INTERSECTION: let intersection = arr1.filter(x => arr2.includes(x));
+ARRAY DIFFERENCE: let difference = arr1.filter(x => !arr2.includes(x));
+
+- == vs === (equality and type checking)
+- Type coercion in javascript
+- Type casting - converting an object of one datatype into another
+- Null check: ?. - checks that something should not be null or undefined. used to fix error - cannot read property of undefined or use an empty array with OR condition (SomedatainArray || [])
+- ...args - array of aruguments - rest operator - when it's not known beforehand how many props would be there. In react it's ...props - object of props when number of props is not known
+
+---
