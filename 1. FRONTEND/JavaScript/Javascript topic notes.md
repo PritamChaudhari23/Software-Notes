@@ -216,13 +216,16 @@ const p = new Person("Adam", 25);
 
 **HOISTING:**
 
-- Hoisting is a JavaScript behavior where declarations of variables and functions are processed before code execution. During the memory allocation (creation phase), JavaScript allocates memory for variables and functions before executing the code.
+- Hoisting is a JavaScript behavior where declarations of variables and functions are processed before the code execution. It happens during the creation phase, so it appears as if they are moved to the top of their scope.
+- Only declarations are hoisted, not initializations. So when var is hoisted, its initialized to undefined.
+- What is TDZ? When let and const are hoisted, they are not initialized and if we try to access them we get reference error. The period when they are hoisted but not yet accessible is the Temporal Dead Zone.
+
+---
+
+- Scope: Global scope, Function scope, Block scope. Others are module scope, lexical scope.
+- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
 - If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. If it is outside, then it has a global scope; it can be accessed anywhere.
 - var is function scoped, let and const are block scoped.
-- Only declarations are hoisted, not initializations.
-- var variables are hoisted and initialized with undefined.
-- let and const variables are hoisted but not initialized.
-- Hoisting does work with let and const, but they are placed in the Temporal Dead Zone (TDZ). The Temporal Dead Zone (TDZ) is the time between the start of a scope and the declaration of a let or const variable, during which accessing it throws a ReferenceError. Accessing them before their declaration results in a ReferenceError (not undefined).
 
 ```javascript
 1.var
@@ -264,9 +267,8 @@ const p = new Person("Adam", 25);
 
 **CLOSURE:**
 
-- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
-- **Closure:** When the inner function is returned or used outside the outer function, allowing it to remember and access the outer function’s variables even after execution ends.
-- Scope: Global scope, function scope, block scope
+- A closure is created when a nested function can still access variables from its outer function's scope, even after the outer function has finished executing.
+- Why do we use closures? We use closures to keep the data private, and allow functions to preserve their variable state which is useful for things like callbacks, event handling and memoization.
 
 Example:
 
@@ -285,6 +287,19 @@ const counter = outer(); // outer() has finished executing
 counter(); // 1
 counter(); // 2
 counter(); // 3
+```
+
+```JavaScript
+function createAccount(balance) {
+  return {
+    deposit: (amt) => (balance += amt),
+    getBalance: () => balance,
+  };
+}
+const acc = createAccount(100);
+acc.deposit(50);
+acc.getBalance(); // 150
+acc.balance;      // undefined, balance is inaccessible from outside
 ```
 
 ---
@@ -306,6 +321,7 @@ counter(); // 3
   - Convert an async/await function into using .then().catch()
   - Convert .then().catch() function into using async/await
   - How to promisify a function
+- Promise utilities: Promise.all, Promise.race
 
 ---
 

@@ -4,7 +4,9 @@ Access locally running project in vs code through internet via port forwarding. 
 
 ---
 
-How to make github copilot in vs code access bitbucket PR and JIRA?
+How to make github copilot in VS Code access Bitbucket PR and JIRA?
+
+How to add MCPs in VS Code so that it can access PRs and stories? - Need URL, Username/email, Personal Access Token
 
 How to connect various plugins to llms?
 
