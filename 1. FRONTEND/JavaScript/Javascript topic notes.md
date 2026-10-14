@@ -326,12 +326,20 @@ Q2. Can you explain the asynchronous behaviour of Javascript? So javascript is s
 
 **MISCELLENEOUS:**
 
+Javascript - Dynamically typed - Determines data type of a value at runtime.
+
+Typescript - Statically typed - Determines data type at compile time, preventing errors at runtime.
+
+Strict type checking: === (data type & value), Equality checking: == (only value)
+
+Type coercion - Converting data types from one to other form. String, Numeric, Boolean, Object to primitive coercion
+
+1.Implicit coercion, 2.Explicit coercion/Type casting
+
 ARRAY INTERSECTION: let intersection = arr1.filter(x => arr2.includes(x));
+
 ARRAY DIFFERENCE: let difference = arr1.filter(x => !arr2.includes(x));
 
-- == vs === (equality and type checking)
-- Type coercion in javascript
-- Type casting - converting an object of one datatype into another
 - Null check: ?. - checks that something should not be null or undefined. used to fix error - cannot read property of undefined or use an empty array with OR condition (SomedatainArray || [])
 - ...args - array of aruguments - rest operator - when it's not known beforehand how many props would be there. In react it's ...props - object of props when number of props is not known
 
