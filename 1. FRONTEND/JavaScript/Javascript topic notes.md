@@ -1,3 +1,16 @@
+Topics list:
+
+1. References
+2. Hoisting
+3. Closure
+4. Promises, async/await
+5. Event loop....
+6. Debounce
+7. Throttling
+8.
+
+---
+
 **TYPESCRIPT:**
 
 - **TypeScript** is an **open-source programming language** developed by **Microsoft** and its **superset of JavaScript**.
@@ -331,6 +344,8 @@ Javascript - Dynamically typed - Determines data type of a value at runtime.
 Typescript - Statically typed - Determines data type at compile time, preventing errors at runtime.
 
 Strict type checking: === (data type & value), Equality checking: == (only value)
+
+Data types: 1. Primitive, 2. Non primitive
 
 Type coercion - Converting data types from one to other form. String, Numeric, Boolean, Object to primitive coercion
 
