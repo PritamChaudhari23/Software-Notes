@@ -2,6 +2,8 @@ Infrastructure As A Code - Use YAML file - Dockerfile, Kubernetes, Cloud formati
 
 Access locally running project in vs code through internet via port forwarding. Copy port of project in ports tab.
 
+VM - Hostname - eg: **`bdc-r9-di-207`** - along with IP, used to identify and address within network or cloud management console
+
 ---
 
 How to make github copilot in VS Code access Bitbucket PR and JIRA?
