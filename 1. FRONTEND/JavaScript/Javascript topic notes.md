@@ -1,28 +1,25 @@
 Topics list:
 
-1. References
-2. Hoisting
-3. Closure
-4. Promises, async/await
-5. Event loop....
-6. Debounce
-7. Throttling
-8.
+1. Data types - Primitive, Non primitive
+2. References
+3. Prototypes
+4. this, call, bind, apply
+5. Scope
+6. Hoisting
+7. Closure
+8. Promises, async/await
+9. Event loop
+10. Debounce
+11. Throttling
 
 ---
 
-**TYPESCRIPT:**
+**DATA TYPES, TYPE COERCION:**
 
-- **TypeScript** is an **open-source programming language** developed by **Microsoft** and its **superset of JavaScript**.
-- It offers **static typing**, so we explicitly declare data type which helps catch errors **before running the code**.
-- **Type inference** helps automatically determine data type if not declared.
-- **Interfaces** & **Type alias** helps to define the structure of objects and ensure consistency.
-- **Object-Oriented Programming Support**: Classes, inheritance, access modifiers (public, private, protected), abstract classes.
-- **Compile-Time Error Checking,** not at runtime.
-- Modern JavaScript Support (ES6+) and excellent tooling and IDE support, Intellisense.
-- It is compiled into **(transpiled)** into plain JavaScript using typescript compiler which browsers and JavaScript engines understand.
-- TypeScript configuration of a project is stored in tsconfig.json file. Compilation: .ts (TypeScript file) => tsc (tsc compiler) => .js (JavaScript file)
-- Current version: v5.9 (Dec 2025)
+- Javascript - Dynamically typed - Determines data type of a value at runtime. Typescript - Statically typed - Determines data type at compile time, preventing errors at runtime.
+- Data types: 1. Primitive, 2. Non primitive
+- Strict type checking: === (data type & value), Equality checking: == (only value)
+- Type coercion - Converting data types from one to other form. String, Numeric, Boolean, Object to primitive coercion. Implicit coercion & Explicit coercion/Type casting
 
 ---
 
@@ -227,18 +224,21 @@ const p = new Person("Adam", 25);
 
 ---
 
+**SCOPE:**
+
+- Global scope, Function scope, Block scope. Others are module scope, lexical scope.
+- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
+- If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. If it is outside, then it has a global scope; it can be accessed anywhere.
+- var is function scoped, let and const are block scoped.
+- **Lexical scope: ???**
+
+---
+
 **HOISTING:**
 
 - Hoisting is a JavaScript behavior where declarations of variables and functions are processed before the code execution. It happens during the creation phase, so it appears as if they are moved to the top of their scope.
 - Only declarations are hoisted, not initializations. So when var is hoisted, its initialized to undefined.
 - What is TDZ? When let and const are hoisted, they are not initialized and if we try to access them we get reference error. The period when they are hoisted but not yet accessible is the Temporal Dead Zone.
-
----
-
-- Scope: Global scope, Function scope, Block scope. Others are module scope, lexical scope.
-- **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
-- If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. If it is outside, then it has a global scope; it can be accessed anywhere.
-- var is function scoped, let and const are block scoped.
 
 ```javascript
 1.var
@@ -337,19 +337,11 @@ Q2. Can you explain the asynchronous behaviour of Javascript? So javascript is s
 
 ---
 
+**DEBOUNCE, THROTTLE:**
+
+---
+
 **MISCELLENEOUS:**
-
-Javascript - Dynamically typed - Determines data type of a value at runtime.
-
-Typescript - Statically typed - Determines data type at compile time, preventing errors at runtime.
-
-Strict type checking: === (data type & value), Equality checking: == (only value)
-
-Data types: 1. Primitive, 2. Non primitive
-
-Type coercion - Converting data types from one to other form. String, Numeric, Boolean, Object to primitive coercion
-
-1.Implicit coercion, 2.Explicit coercion/Type casting
 
 ARRAY INTERSECTION: let intersection = arr1.filter(x => arr2.includes(x));
 
