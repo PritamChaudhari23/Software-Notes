@@ -226,11 +226,11 @@ const p = new Person("Adam", 25);
 
 **SCOPE:**
 
-- Global scope, Function scope, Block scope. Others are module scope, lexical scope.
 - **Function nesting**: Function is defined inside another function, and the inner function's scope is limited to the outer function unless returned or passed outside.
-- If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. If it is outside, then it has a global scope; it can be accessed anywhere.
-- var is function scoped, let and const are block scoped.
-- **Lexical scope: ???**
+- **Global scope:** If variable is outside a function, then it has a global scope; it can be accessed anywhere.
+- **Function scope:** If a variable is declared inside a function, its scope is limited to that function, which means it cannot be accessed outside of that function. var is function scoped.
+- **Block scope:** let and const are block scoped.
+- **Lexical scope:** A function's access to variables depends on where it is defined, not where it is called. Inner functions can access variables from their own scope and outer scopes, but outer functions cannot access inner variables. The scope of a variable determined by where it is declared in the source code is called its lexical scope.
 
 ---
 
