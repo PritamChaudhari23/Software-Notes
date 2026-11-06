@@ -337,16 +337,82 @@ Q2. Can you explain the asynchronous behaviour of Javascript? So javascript is s
 
 ---
 
-**DEBOUNCE, THROTTLE:**
+**DEBOUNCE:**
+
+- Debouncing is a mechanism to delay function execution for a specific period of inactivity.
+- It improves the performance by reducing unnecessary function calls.
+- Debouncing = clearTimeout followed by setTimeout.
+
+Example:
+
+```JavaScript
+function debounce(fn, delay) {
+    let timer;
+
+    return function () {
+        clearTimeout(timer);
+
+        timer = setTimeout(() => {
+            fn();
+        }, delay);
+    };
+}
+
+// Usage
+const search = debounce(() => {
+    console.log("Searching...");
+}, 500);
+
+search();
+search();
+search();
+```
+
+**THROTTLE:**
+
+- Throttling is a mechanism to limit function execution to once within a specified time interval.
+- It improves performance by reducing excessive function executions.
+
+Example:
+
+```JavaScript
+function throttle(fn, delay) {
+    let lastCall = 0;
+
+    return function () {
+        const now = Date.now();
+
+        if (now - lastCall >= delay) {
+            fn();
+            lastCall = now;
+        }
+    };
+}
+
+function submit() {
+    console.log("Processing request...");
+}
+
+const throttledSubmit = throttle(submit, 2000);
+
+// Simulate repeated clicks
+throttledSubmit();
+throttledSubmit();
+throttledSubmit();
+```
+
+- Both use closures to retain variables between calls.
+- What is difference between both? Debouncing waits for inactivity, whereas throttling limits execution frequency.
+- Why is debouncing and throttling used? Both are used to improve the performance by reducing unnecessary function executions.
+- What is used when? Debouncing is generally using when making API request while user types into search bar. Throttling is used when some function is executed on mouse movement or scroll.
 
 ---
 
 **MISCELLENEOUS:**
 
-ARRAY INTERSECTION: let intersection = arr1.filter(x => arr2.includes(x));
-
-ARRAY DIFFERENCE: let difference = arr1.filter(x => !arr2.includes(x));
-
+- A function which accepts another function as an argument or returns another function is called a **higher order function**. The function passed as argument is called **callback function**. The function returned by a higher-order function is simply called the **returned function.**
+- ARRAY INTERSECTION: let intersection = arr1.filter(x => arr2.includes(x));
+- ARRAY DIFFERENCE: let difference = arr1.filter(x => !arr2.includes(x));
 - Null check: ?. - checks that something should not be null or undefined. used to fix error - cannot read property of undefined or use an empty array with OR condition (SomedatainArray || [])
 - ...args - array of aruguments - rest operator - when it's not known beforehand how many props would be there. In react it's ...props - object of props when number of props is not known
 
