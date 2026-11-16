@@ -16,18 +16,41 @@
 
 ---
 
+## 1. Node
+
 - Javascript **runtime environment** which runs on **Google** **chrome's V8 javascript engine**.
 - Executes **outside** the browser.
-- **Single threaded**: It executes one main thread sequentially so the code runs line by line.
-- **Event loop:** Async tasks are handled by the **event loop** , so the main thread never blocks.
-- Has **Non blocking I/O**: Uses **libuv** library to perform I/O operations.
-- **Worker threads:** For CPU-heavy tasks, Node.js supports **worker threads** to run JavaScript in **parallel** from a thread pool.
+- **Single threaded**: It executes one main thread sequentially so the code runs line by line. Your JavaScript runs on one thread, but Node itself uses extra threads internally (the libuv thread pool and worker threads).
+- **Event loop:** Async tasks are handled by the **event loop** , so the main thread never blocks. Only as long as you don't run heavy synchronous code. A long loop on the main thread blocks every request.
+- Has **Non blocking I/O**: Uses **libuv** library to perform I/O operations. libuv is a C library. It provides the event loop and a thread pool (4 threads by default) used for fs, dns, crypto and zlib. Network I/O uses OS-level async mechanisms, not the thread pool.
+- **Worker threads:** For CPU-heavy tasks, Node.js supports **worker threads** to run JavaScript in **parallel** in separate threads. Each worker is its own thread with its own V8 instance and event loop. The libuv thread pool is a different thing. For CPU-heavy work you can also use `child_process` or `cluster`.
 - **Event driven**: Supports **asynchronous code** execution - Uses promises, callbacks and async/await.
-- Has **built in modules** for various functionalities - like file handling, encryption, data fetching etc.
+- Has **built in modules** for various functionalities - like file handling, encryption, data fetching etc. Examples: `fs`, `path`, `http`, `crypto`, `events`, `stream`, `os`.
 - Modules are written in JavaScript & C++ language
 - Cross platform, Rich ecosystem, Scalable, real time applications
-- Free, open-source
-- Current version: v24.x (Dec 2025)
+- Free, open-source, MIT license.
+- Current version: LTS v24.x (Dec 2025). Only even-numbered releases become LTS.
+
+### Event loop
+
+- Phases in order: **timers**, pending callbacks, idle/prepare, **poll**, **check**, close callbacks.
+- timers runs `setTimeout` and `setInterval` callbacks. poll picks up new I/O events. check runs `setImmediate` callbacks.
+- Between every phase (and after each callback), Node drains `process.nextTick` first, then promise microtasks.
+- `setTimeout(fn, 0)` vs `setImmediate(fn)`: from the main module the order is not guaranteed. Inside an I/O callback, `setImmediate` always runs first.
+
+### Blocking vs non-blocking code
+
+- **Blocking**: the main thread waits until the operation finishes and nothing else runs. Example: `fs.readFileSync`.
+- **Non-blocking**: the operation is handed off, the main thread moves on, and a callback or promise handles the result later. Example: `fs.readFile` or `fs.promises.readFile`.
+- In a server, one blocking call stalls every request.
+
+### Other core concepts
+
+- **Modules**: CommonJS (`require`, `module.exports`) vs ES modules (`import` and `export`, needs `"type": "module"` or the `.mjs` extension).
+- **Streams**: process data in chunks instead of loading it all in memory. Four types: readable, writable, duplex, transform.
+- **Buffer**: fixed-size raw binary data.
+- **EventEmitter**: the base of most Node APIs (`on`, `emit`).
+- **cluster**: one process per CPU core to use all cores. Different from worker threads, which live inside one process.
 
 ---
 
