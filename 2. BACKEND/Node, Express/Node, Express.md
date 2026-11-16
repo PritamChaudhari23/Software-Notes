@@ -1,6 +1,6 @@
 # Node.js & Express Notes
 
-Contents:
+### Contents:
 
 1. Node
 2. Express
@@ -46,43 +46,6 @@ EXPRESS:
 
 ---
 
-Nodemon:
-
----
-
-NVM – Node version manager
-
-- Used to work with multiple node js versions in the system. Useful for testing, debugging, checking new features.
-- Download and install exe.
-- nvm --version: Check nvm version
-- nvm list: List all node js versions
-- nvm install 18.20.2 OR nvm install 22.23.1 OR nvm install 24.18.0 : Install specific versions
-- nvm use 18.20.2 OR nvm use 22.23.1 OR nvm use 24.18.0 : Use specific version among installed
-- nvm install lts: Install latest LTS node
-- nvm install latest: Install latest node
-
-Switch versions for projects:
-
-cd my-old-project
-nvm use 18.20.2
-
-cd ../my-new-project
-nvm use 24.18.0
-
----
-
-PM2 in node js - Process manager for node applications
-
----
-
-PACKAGE MANAGER: NPM & YARN
-
-1. Install: npm install `<package-name>`@`<version>`, yarn add `<package-name>`@`<version>`. npm install lodash@^4.0.0, yarn add lodash@^4.0.0 => ^ is used to install version range, - install minor updates and ~ for patches
-2. Uninstall: npm uninstall foo, yarn remove foo
-3. dev dependencies: --save-dev
-
----
-
 EXPRESS:
 
 next(), middleware - app.use(), templating engine, static rendering?
@@ -108,15 +71,71 @@ Response methods:
 
 ---
 
-WEB SERVER:
+## 3. Web server
 
-- Computer software installed on server hardware that serves HTTP requests.
-- Apache HTTP server: Node
-- Apache Tomcat: Java
-- IIS (Internet Information Services): Microsoft .NET
-- nginx
-- WAMP server: PHP
-- Web server: A software that handles http requests and sends response. Eg: Apache HTTP Server, Nginx, Microsoft IIS, Express (Node.js)
+- Web server: A software installed on server that handles http requests and sends response. Eg: Apache HTTP Server, Nginx, Microsoft IIS, Node.js `http` module.
+- Apache HTTP server: general-purpose web server, written in C.
+- Apache Tomcat: Java. A servlet container / application server for Java.
+- IIS (Internet Information Services): Microsoft .NET. Microsoft's web server for Windows. It hosts ASP.NET apps.
+- nginx: Web server, reverse proxy and load balancer. Commonly placed in front of Node apps.
+- WAMP server: PHP. WAMP is a bundle: Windows + Apache + MySQL + PHP. Similar bundles: LAMP (Linux), XAMPP.
+
+---
+
+## 4. Nodemon, NVM and PM2
+
+### Nodemon:
+
+- A dev tool that watches files and restarts the app automatically on changes.
+- Install: `npm install --save-dev nodemon`. Run: `nodemon app.js`, or add a `dev` script in package.json.
+- For development only, not production. Node also has a built-in alternative: `node --watch app.js`.
+
+### NVM – Node version manager
+
+- Used to work with multiple node js versions in the system. Useful for testing, debugging, checking new features.
+- Download and install exe. This is nvm-windows. On Mac and Linux the tool is nvm-sh, installed with a script.
+- nvm --version: Check nvm version
+- nvm list: List all node js versions
+- nvm install 18.20.2 OR nvm install 22.23.1 OR nvm install 24.18.0 : Install specific versions
+- nvm list available: shows the real ones.
+- nvm use 18.20.2 OR nvm use 22.23.1 OR nvm use 24.18.0 : Use specific version among installed
+- nvm install lts: Install latest LTS node. On nvm-sh the command is nvm install --lts.
+- nvm install latest: Install latest node
+
+Switch versions for projects:
+
+```
+cd my-old-project
+nvm use 18.20.2
+
+cd ../my-new-project
+nvm use 24.18.0
+```
+
+Tip: a `.nvmrc` file in the project (nvm-sh) pins the version for that project.
+
+### PM2 in node js - Process manager for node applications
+
+- Keeps the app running: restarts it on a crash, and can start it on server reboot.
+- Cluster mode: `pm2 start app.js -i max` runs one instance per CPU core.
+- Built-in logs and monitoring.
+- Commands: `pm2 start app.js`, `pm2 list`, `pm2 logs`, `pm2 restart <name>`, `pm2 stop <name>`, `pm2 save`, `pm2 startup`.
+
+---
+
+## 5. Package manager: NPM & YARN
+
+1. Install: npm install `<package-name>`@`<version>`, yarn add `<package-name>`@`<version>`. npm install lodash@^4.0.0, yarn add lodash@^4.0.0 => ^ allows minor and patch (4.x.x, but not 5.0.0) and \~ for patch updates only (4.0.x).
+2. Uninstall: npm uninstall foo, yarn remove foo
+3. dev dependencies: --save-dev. The short form is `-D`. In Yarn: `yarn add --dev foo`.
+
+Also know:
+
+- `package.json` lists dependencies and scripts. `package-lock.json` locks exact versions.
+- `dependencies` vs `devDependencies`: dev ones are only for development (nodemon, test tools).
+- `npm ci`: clean install strictly from the lock file (used in CI).
+- `npx`: runs a package without installing it globally.
+- `npm install -g`: global install.
 
 ---
 
