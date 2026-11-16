@@ -31,43 +31,50 @@
 
 ---
 
-EXPRESS:
+## 2. Express
 
 - Fast, lightweight, minimalist framework
-- Buidiling **web applications** and **APIs** with Node js
+- Building **web applications** and **APIs** with Node js
 - Supports **middlewares** to intercept and process requests and responses
-- express.json() for JSON and express.static() for serving static files
+- express.json() for JSON, express.static() for serving static files and express.urlencoded() for form data.
 - Supports **routing**
 - Supports templating engines
 - RESTful API Development
 - Static file serving
 - Unopinionated - so we don't have to follow a fixed project structure
 - Current version: v5.x (Dec 2025)
+- v5 is the default on npm now. A key change: errors thrown in async handlers, and rejected promises, go to the error handler automatically.
 
----
+### next(), middleware - app.use(), templating engine, static rendering:
 
-EXPRESS:
+- **Middleware**: a function with `(req, res, next)` that runs between the request and the response. It can change `req` and `res`, end the response, or call `next()`.
+- **next()**: passes control to the next middleware. `next(err)` skips to the error-handling middleware.
+- **app.use()**: registers middleware for all methods, optionally under a path. It runs in the order you register it, so order matters.
+- **Error-handling middleware** has four arguments: `(err, req, res, next)`, and is registered last.
+- **Templating engine**: renders HTML on the server by merging a template with data, using `res.render()`. Examples: ejs, pug, handlebars. Set with `app.set('view engine', 'ejs')`.
+- **Static rendering**: `express.static('public')` serves files (css, js, images) as they are from a folder, with no processing.
 
-next(), middleware - app.use(), templating engine, static rendering?
+### Request properties:
 
-Request methods:
-
-- req.body
-- req.params
-- req.query
+- req.body: It is undefined unless a body parser such as `express.json()` is used.
+- req.params: Route parameters, for `/users/:id`.
+- req.query: The query string, for `?page=2`.
 - req.method
 - req.url
-- req.session - used to manage session
+- req.originalUrl - keeps the full original URL.
+- req.session - used to manage session. It is not core Express. It comes from the express-session middleware.
+- req.headers, req.cookies (needs cookie-parser), req.ip
 
-Response methods:
+### Response methods:
 
-- res.send() - send string in response
+- res.send() - send string in response. It also sends buffers, objects and arrays.
 - res.json() - send json in response
 - res.status()
 - res.redirect()
 - res.render()
 - res.set()
 - res.cookie()
+- res.sendFile(), res.download(), res.sendStatus(), res.end(), res.clearCookie(), res.type()
 
 ---
 
