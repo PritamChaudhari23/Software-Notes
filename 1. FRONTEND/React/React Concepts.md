@@ -115,6 +115,10 @@ REACT HOCs:
 
 ---
 
+CONCURRENT RENDERING: .....
+
+---
+
 REACT JS v/s REACT with TypeScript
 
 - Basic difference is typescript is static typed language (type check happens at compile time) whereas javascript is dynamically typed language (type check happens at runtime).
