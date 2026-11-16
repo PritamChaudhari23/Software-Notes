@@ -1,4 +1,20 @@
-NODE:
+# Node.js & Express Notes
+
+Contents:
+
+1. Node
+2. Express
+3. Web server
+4. Nodemon, NVM and PM2
+5. Package manager: NPM & YARN
+6. Debugging node applications in VS Code
+7. File upload to AWS S3
+8. Framework and Library
+9. Notes: personal projects and backend knowledge
+10. Node JS topics
+11. Libraries
+
+---
 
 - Javascript **runtime environment** which runs on **Google** **chrome's V8 javascript engine**.
 - Executes **outside** the browser.
@@ -67,15 +83,6 @@ PACKAGE MANAGER: NPM & YARN
 
 ---
 
-Debugging node applications in VS Code: Set breakpoints
-
-1. Without launch.json: VS Code toolbar => Run => Start debugging
-2. With launch.json: VS code - Side panel => Run and debug => create launch.json file
-
-- What is blocking vs non-blocking code?
-
----
-
 EXPRESS:
 
 next(), middleware - app.use(), templating engine, static rendering?
@@ -113,26 +120,72 @@ WEB SERVER:
 
 ---
 
+## 6. Debugging node applications in VS Code: Set breakpoints
+
+1. Without launch.json: VS Code toolbar => Run => Start debugging
+2. With launch.json: VS code - Side panel => Run and debug => create launch.json file
+3. `node --inspect app.js`, then open `chrome://inspect` to debug in Chrome DevTools. `--inspect-brk` pauses on the first line.
+
+---
+
+## 7. File upload to AWS S3
+
+- Upload through your server: multer (memory storage) plus the AWS SDK v3 (@aws-sdk/client-s3, PutObjectCommand), or multer-s3.
+- Better for large files: your server generates a presigned URL and the client uploads directly to S3.
+
+---
+
+## 8. Framework and Library
+
+FRAMEWORK:
+
+- A framework is a set of pre-written code that provides a structure for developing software applications.
+- It is a layer between application and OS. More precisely, a framework sits between your application code and the language runtime or platform (Express on Node.js, Spring Boot on the JVM), not directly on the OS.
+- A framework is usually built for one language. Express is for JavaScript, Django for Python, Spring Boot for Java. A platform like .NET supports several languages (C#, F#, VB).
+- A framework does not convert code into OS or system understandable instructions. That job belongs to the compiler, interpreter or runtime (V8 for Node.js, the JVM for Java). The framework is pre-written code that runs on top of it.
+- It speeds up the development process because programmers don't have to write code from scratch.
+- It makes applications compatible due to standardisation.
+- It's like a frame or a template for application development.
+- Popular frameworks for different technologies:
+  1. Java: Spring Boot
+  2. C#: Microsoft .NET
+  3. Node JS: Express, NestJS, Fastify, Koa
+  4. Python: Django, Flask
+  5. PHP: Laravel, Yii
+  6. Ruby: Ruby on Rails
+  7. Angular framework
+  8. React: Javascript library, Next JS: Framework for React
+
+LIBRARY: Collection of pre-written code that can be used to perform specific tasks.
+Framework vs library: you call a library, but a framework calls your code (inversion of control).
+
+Package/Dependencies managers for libraries in different technologies:
+
+1. Java: Maven, Gradle
+2. MS .NET: NuGet
+3. Node JS: NPM, Yarn, pnpm
+4. Python: PIP
+5. Dart, Flutter: Pub
+
+---
+
+## 9. Notes: personal projects and backend knowledge
+
 NOTES: Software notes - Backend, Database
 
-PERSONAL PROJECTS:
-
-1. Invoice manager
-2. Products typescript
-3. Students report - MVC
-
-What can I do now?
+What can I do?
 
 1. Create REST API
 2. Write CRUD queries
 3. Implement layered architecture
+4. File upload to AWS S3
 
-My Backend knowledge:
+Personal projects:
 
-1. invoice manager
+1. Invoice manager
 2. medconnect
-3. students report
-4. product typescript
+3. Products typescript
+4. Students report - MVC
 5. node concurrent
 6. mongo query
 7. node learning
@@ -140,11 +193,7 @@ My Backend knowledge:
 
 ---
 
-- File upload to AWS S3
-
----
-
-Node JS:
+## 10. Node JS topics
 
 1. Introduction and basic javascript
 2. Node JS basic concepts and installation
@@ -182,7 +231,7 @@ Node JS:
 
 ---
 
-Libraries:
+## 11. Libraries
 
 1. express
 2. express-validator
@@ -200,11 +249,11 @@ Libraries:
 14. mysql2
 15. sequalize
 16. nodemailer
-17. nodemailer-sendgrid-transport
+17. nodemailer-sendgrid-transport (Deprecated), now @sendgrid/mail
 18. socket.io
 19. socket.io-client
-20. body-parser
-21. csurf
+20. body-parser (rarely used now), now express.json() and express.urlencoded() are built into Express (4.16 and later).
+21. csurf (Deprecated). Use another CSRF protection (for example csrf-csrf) or SameSite cookies.
 22. connect-flash
 23. pdfkit
 24. stripe
@@ -212,7 +261,7 @@ Libraries:
 26. compression
 27. morgan
 28. graphql
-29. express-graphql
+29. express-graphql (Deprecated). Alternatives: graphql-http, graphql-yoga, Apollo Server.
 30. mocha (testing)
 31. chai (testing)
 32. sinon (testing)
@@ -222,6 +271,13 @@ Libraries:
 36. @types/body-parser
 37. chalk
 38. validator
-39. request
+39. request (Deprecated). Use the built-in fetch (Node 18 and later) or axios.
+40. dotenv (env variables; Node 20.6 and later also has --env-file)
+41. cors
+42. cookie-parser
+43. joi or zod (validation)
+44. jest and supertest (testing, API tests)
+45. winston or pino (logging)
+46. @aws-sdk/client-s3 (S3)
 
 ---
